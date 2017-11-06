@@ -277,8 +277,12 @@ footer {
 #lead-content h2 {
 	color: #fff;
 	font-weight: 500;
-	font-size: 2.25em;
-	margin-bottom: 15px
+	font-size: 2em;
+	margin-bottom: 5px;
+}
+
+#lead-content a {
+	margin-top: 15px;
 }
 
 #lead-overlay {
@@ -730,7 +734,7 @@ footer {
 		font-size: 1.3em
 	}
 	#lead-content a {
-		padding: 10px 20px
+		padding: 10px 20px;
 	}
 	#lead-down {
 		display: none
