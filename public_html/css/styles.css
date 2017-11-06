@@ -271,14 +271,15 @@ footer {
 	font-size: 5em;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	line-height: 0.9em
+	line-height: 0.9em;
+	margin-bottom: 3px;
 }
 
 #lead-content h2 {
 	color: #fff;
 	font-weight: 500;
 	font-size: 2em;
-	margin-bottom: 5px;
+	margin-bottom: 2px;
 }
 
 #lead-content a {
