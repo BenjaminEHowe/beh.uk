@@ -108,7 +108,7 @@ header.sticky {
 	position: fixed;
 	right: 15px;
 	top: 10px;
-	color: #ff4646;
+	color: #b21010;
 	font-size: 1.5em;
 	z-index: 20;
 	padding: 0 7px;
@@ -125,7 +125,7 @@ header.sticky {
 	padding-right: 15px;
 	padding-top: 10px;
 	cursor: pointer;
-	color: #ff4646
+	color: #b21010;
 }
 
 #mobile-menu-close span {
@@ -643,7 +643,7 @@ footer .top i {
 	border-radius: 4px;
 	padding: 5px 10px;
 	border: none;
-	color: #bb6a21;
+	color: #b21010;
 	font-weight: 700;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	transition: .5s ease all
