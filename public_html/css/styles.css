@@ -729,7 +729,10 @@ footer .top i {
 	#lead-content h2 {
 		font-size: 1.3em
 	}
-	#lead-content a {
+	.social li {
+		font-size: 1.25em;
+	}
+	#lead-content a.button {
 		padding: 10px 20px;
 	}
 	#lead-down {
@@ -760,7 +763,10 @@ footer .top i {
 	#lead-content h2 {
 		font-size: 1em
 	}
-	#lead-content a {
+	.social li {
+		font-size: 1em;
+	}
+	#lead-content a.button {
 		font-size: 0.9em;
 		padding: 5px 10px
 	}
