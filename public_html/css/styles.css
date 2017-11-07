@@ -138,23 +138,17 @@ header.sticky {
 }
 
 footer {
-	padding: 50px 0
+	padding: 50px 0;
+	text-align: center;
 }
 
-.copyright {
-	padding-top: 20px
-}
-
-.copyright p {
+footer p.copyright {
+	color: #74808a;
 	margin: 0;
-	color: #74808a
+	padding-top: 20px;
 }
 
-.top {
-	text-align: center
-}
-
-.top span {
+footer .top span {
 	cursor: pointer;
 	display: block;
 	margin: 15px auto 0 auto;
@@ -165,12 +159,12 @@ footer {
 	text-align: center
 }
 
-.top i {
+footer .top i {
 	color: #74808a
 }
 
 .social {
-	text-align: right
+	text-align: center;
 }
 
 .social ul {
@@ -180,18 +174,19 @@ footer {
 
 .social li {
 	display: inline-block;
-	font-size: 1.25em;
+	font-size: 1.625em;
 	list-style: none
 }
 
 .social a {
 	display: block;
-	color: #74808a;
-	padding: 10px
+	color: #fff;
+	padding: 0 10px;
+	transition: .5s ease all;
 }
 
 .social a:hover {
-	color: #b21010
+	color: #ff4646;
 }
 
 .btn-rounded-white {
@@ -282,7 +277,7 @@ footer {
 	margin-bottom: 2px;
 }
 
-#lead-content a {
+#lead-content a.button {
 	margin-top: 15px;
 }
 
@@ -754,9 +749,6 @@ footer {
 		transform: none
 	}
 	footer {
-		text-align: center
-	}
-	.social {
 		text-align: center
 	}
 }
