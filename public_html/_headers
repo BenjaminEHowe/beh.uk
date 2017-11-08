@@ -3,3 +3,4 @@
 	Link: </js/scripts.js>; rel=preload; as=script
 	Link: </img/thinkpad.jpg>; rel=preload; as=image
 	Link: </img/sharelive.jpg>; rel=preload; as=image
+	Link: </img/keyringpi.jpg>; rel=preload; as=image
