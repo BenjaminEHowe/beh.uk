@@ -25,12 +25,23 @@
         document.onmousemove = handleMouseMove;
 
         document.getElementById("textbox").style.position = "absolute";
-        document.getElementById("textbox").style.left = "45%";
-        document.getElementById("textbox").style.top = "49%";
+        document.getElementById("textbox").style.width = "250px";
+        document.getElementById("textbox").style.height = "30px";
+        document.getElementById("textbox").style.left = (($(window).width() / 2) - 125) + "px";
+        document.getElementById("textbox").style.top = (($(window).height() / 2) - 15) + "px";
 
         function handleMouseMove(event) {
-            document.getElementById("textbox").style.left = (event.pageX + 5) + "px";
-            document.getElementById("textbox").style.top = (event.pageY + 5) + "px";
+            if (event.pageX + 20 + 250 < $(window).width()) {
+                document.getElementById("textbox").style.left = (event.pageX + 20) + "px";
+            } else {
+                document.getElementById("textbox").style.left = (event.pageX - 250 - 20) + "px";
+            }
+
+            if (event.pageY + 20 + 30 < $(window).height()) {
+                document.getElementById("textbox").style.top = (event.pageY + 20) + "px";
+            } else {
+                document.getElementById("textbox").style.top = (event.pageY - 30 - 20) + "px";
+            }
         }
     </script>
   </body>
