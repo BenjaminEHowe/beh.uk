@@ -79,10 +79,10 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="September 2017 – November 2017">
+            <div data-date="September 2017 – March 2017">
                 <h3>The University of Reading</h3>
                 <h4>Student Demonstrator</h4>
-                <p>I helped run various lab sessions, including 1<sup>st</sup> year C Programming and 2<sup>nd</sup> year Computer Architecture (ARM Programming). My role was to award marks, as well as helping resolve issues with lab hardware / software and answering any questions students may have.</p>
+                <p>I helped run various lab sessions, including 1<sup>st</sup> year C / C++ Programming and 2<sup>nd</sup> year Computer Architecture (ARM Programming). My role was to award marks, as well as helping resolve issues with lab hardware / software and answering any questions students may have.</p>
             </div>
 
             <div data-date="January 2016 – November 2017">
@@ -199,10 +199,10 @@
     <div id="contact" class="background-alt">
         <h2 class="heading">Contact</h2>
         <div id="contact-form">
-            <form name="contact" action="thank-you" netlify>
+            <form name="contact" action="thank-you" netlify netlify-honeypot="Name">
+                <input type="text" name="Name" class="d-none" placeholder="Leave blank if you're human">
                 <input type="email" name="Sender" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-				<div netlify-recaptcha></div>
+                <textarea name="Message" placeholder="Your message" required></textarea>
                 <button type="submit">Send</button>
             </form>
         </div>
