@@ -277,8 +277,8 @@ footer .top i {
 	margin-bottom: 2px;
 }
 
-#lead-content a.button {
-	margin-top: 15px;
+#lead-content > * {
+	margin: 30px auto;
 }
 
 #lead-overlay {
