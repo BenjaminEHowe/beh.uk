@@ -1,0 +1,7 @@
+url: "https://jekyll-blank.beh.uk/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+title: "Blank Jekyll Site" # the name of your site, e.g. ACME Corp.
+
+exclude:
+  - netlify.toml
+  - README.md
