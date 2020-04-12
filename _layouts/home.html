@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/{% ministamp _assets/css/reset.css assets/css/reset.css %}">
+    <link rel="stylesheet" href="/{% ministamp _assets/css/main.css assets/css/main.css %}">
+    <style>
+      #background, #overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+
+      #background {
+        z-index: -10;
+        background: url("/{% ministamp { source_path: '_assets/img/{{ site.background }}', destination_path: 'assets/img/{{ site.background }}' } %}");
+        background-size: cover;
+      }
+
+      #overlay {
+        z-index: -5;
+        background: rgba(187, 33, 33, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="background"></div>
+    <div id="overlay"></div>
+    <header>
+      <nav id="nav-top-internal">
+        <ul>
+          {% for item in site.data.navbar.pages %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <img src="/{% ministamp { source_path: '_assets/img/{{ site.logo }}', destination_path: 'assets/img/{{ site.logo }}' } %}" alt="{{ site.title }}">
+      <nav id="nav-top-social">
+        <ul>
+          {% for item in site.data.social.profiles %}
+            <li><a href="{{ item.url }}">{{ item.type }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </header>
+    <h1>{{ site.title }}</h1>
+    <h2>{{ site.tagline }}</h2>
+    {{ content }}
+  </body>
+</html>

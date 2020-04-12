@@ -1,5 +1,8 @@
-url: "https://jekyll-blank.beh.uk/" # the base hostname & protocol for your site, e.g. http://example.com
-title: "Blank Jekyll Site" # the name of your site, e.g. ACME Corp.
+background: "thinkpad.jpg"
+language: "en-GB"
+logo: "benjamin-edward-howe.svg"
+tagline: "Software Engineer"
+title: "Benjamin Howe"
 
 plugins:
   - jekyll/minibundle
