@@ -109,7 +109,7 @@ footer {
 }
 
 #home main {
-  min-height: calc(100vh - 20em);
+  min-height: calc(100vh - 27em);
 }
 
 #home main img {
@@ -130,6 +130,10 @@ footer {
   text-decoration: none;
   font-size: 125%;
   border-radius: 2em;
+}
+
+#home footer {
+  margin-top: 8em;
 }
 
 /* media queries */
