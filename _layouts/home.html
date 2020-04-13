@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ site.language }}">
+<html lang="{{ site.language }}" id="home">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="/{% ministamp _assets/css/reset.css assets/css/reset.css %}">
-    <link rel="stylesheet" href="/{% ministamp _assets/css/main.css assets/css/main.css %}">
+    {% include head.html %}
     <style>
       #background, #overlay {
-        position: absolute;
+        position: fixed;
         height: 100%;
         width: 100%;
       }
@@ -29,24 +26,13 @@
     <div id="background"></div>
     <div id="overlay"></div>
     <header>
-      <nav id="nav-top-internal">
-        <ul>
-          {% for item in site.data.navbar.pages %}
-            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </nav>
-      <img src="/{% ministamp { source_path: '_assets/img/{{ site.logo }}', destination_path: 'assets/img/{{ site.logo }}' } %}" alt="{{ site.title }}">
-      <nav id="nav-top-social">
-        <ul>
-          {% for item in site.data.social.profiles %}
-            <li><a href="{{ item.url }}">{{ item.type }}</a></li>
-          {% endfor %}
-        </ul>
-      </nav>
+      {% include header.html %}
     </header>
-    <h1>{{ site.title }}</h1>
-    <h2>{{ site.tagline }}</h2>
-    {{ content }}
+    <main class="container">
+      <img alt="{{ site.title }}" src="/{% ministamp { source_path: '_assets/img/{{ site.logo }}', destination_path: 'assets/img/{{ site.logo }}' } %}">
+      <h1>{{ site.tagline }}</h1>
+      {{ content }}
+    </main>
+    {% include footer.html %}
   </body>
 </html>

@@ -1,8 +1,8 @@
 background: "thinkpad.jpg"
 language: "en-GB"
-logo: "benjamin-edward-howe.svg"
+logo: "beh.svg"
 tagline: "Software Engineer"
-title: "Benjamin Howe"
+title: "Benjamin Edward Howe"
 
 plugins:
   - jekyll/minibundle

@@ -1,0 +1,26 @@
+<div class="container">
+  <div id="logo">
+    <span class="valign-center-helper"></span>
+    <a href="/">
+      <img alt="{{ site.title }}" src="/{% ministamp { source_path: '_assets/img/{{ site.logo }}', destination_path: 'assets/img/{{ site.logo }}' } %}">
+    </a>
+  </div>
+  <nav id="nav-top-internal">
+    <ul>
+      {% for item in site.data.navbar.pages %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <nav id="nav-top-social">
+    <ul>
+      {% for item in site.data.social.profiles %}
+        <li>
+          <a href="{{ item.url }}">
+            <img alt="{{ item.type }}" src="/{% ministamp { source_path: '_assets/img/social/{{ item.type }}.svg', destination_path: 'assets/img/{{ item.type }}.svg' } %}">
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
