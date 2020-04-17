@@ -10,7 +10,7 @@ html {
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 1rem;
+  padding: 0.5rem 0 1rem;
 }
 
 h1 {
@@ -38,7 +38,7 @@ h6 {
 }
 
 p {
-  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
   line-height: 1.5;
 }
 
@@ -59,7 +59,7 @@ header, footer {
 header {
   height: 3em;
   padding: 1.5em 0;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 header .container {
@@ -107,7 +107,7 @@ header #logo img {
 /* footer */
 
 #main {
-  min-height: calc(100vh - 12.5em);
+  min-height: calc(100vh - 11.5em);
 }
 
 footer {
