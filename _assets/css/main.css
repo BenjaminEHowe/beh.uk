@@ -70,14 +70,14 @@ header #logo img {
 /* footer */
 
 #main {
-  min-height: calc(100vh - 12em);
+  min-height: calc(100vh - 12.5em);
 }
 
 footer {
   color: #fff;
   text-align: center;
   margin-top: 1em;
-  padding: 1em;
+  padding: 1.25em;
 }
 
 /* homepage-specific rules */
@@ -100,7 +100,7 @@ footer {
 }
 
 #home #main {
-  min-height: calc(100vh - 27em);
+  min-height: calc(100vh - 25.5em);
 }
 
 #home #main img {
