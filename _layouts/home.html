@@ -28,7 +28,7 @@
     <header>
       {% include header.html %}
     </header>
-    <main class="container">
+    <div class="container" id="main">
       <img alt="{{ site.title }}" src="/{% ministamp { source_path: '_assets/img/{{ site.logo }}', destination_path: 'assets/img/{{ site.logo }}' } %}">
       <h1>{{ site.tagline }}</h1>
       {{ content }}

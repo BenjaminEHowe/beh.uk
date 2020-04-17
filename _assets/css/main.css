@@ -70,7 +70,7 @@ header #logo img {
 
 /* footer */
 
-main {
+#main {
   min-height: calc(100vh - 12em);
 }
 
@@ -100,23 +100,23 @@ footer {
   visibility: hidden;
 }
 
-#home main {
+#home #main {
   min-height: calc(100vh - 27em);
 }
 
-#home main img {
+#home #main img {
   width: 40em;
   height: auto;
   max-width: 80%;
   margin-bottom: 4em;
 }
 
-#home main h1 {
+#home #main h1 {
   font-size: 3em;
   margin-bottom: 2em;
 }
 
-#home main a {
+#home #main a {
   border: solid #fff 0.075em;
   padding: 1.2em;
   text-decoration: none;
