@@ -71,14 +71,14 @@ header #logo img {
 /* footer */
 
 main {
-  min-height: calc(100vh - 14em);
+  min-height: calc(100vh - 12em);
 }
 
 footer {
   color: #fff;
   text-align: center;
   margin-top: 1em;
-  height: 3em;
+  padding: 1em;
 }
 
 /* homepage-specific rules */
