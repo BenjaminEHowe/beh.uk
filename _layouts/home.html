@@ -107,10 +107,18 @@
     </div>
     {% include footer.html %}
     <script>
-      window.addEventListener("load", function() {
-        let backgroundDiv = document.getElementById("background");
-        backgroundDiv.style.background = "url('/{% ministamp _assets/img/thinkpad.jpg assets/img/thinkpad.jpg %}')";
-        backgroundDiv.style.backgroundSize = "cover";
+      window.addEventListener("load", () => {
+        fetch("/{% ministamp _assets/img/thinkpad.jpg assets/img/thinkpad.jpg %}")
+        .then( response => response.blob() )
+        .then( blob => {
+          let reader = new FileReader();
+          reader.onload = function() {
+            let backgroundDiv = document.getElementById("background");
+            backgroundDiv.style.background = `url("${this.result}")`;
+            backgroundDiv.style.backgroundSize = "cover";
+          };
+          reader.readAsDataURL(blob);
+        });
       });
     </script>
   </body>
