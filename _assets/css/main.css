@@ -95,7 +95,7 @@ header ul li a {
   display: block;
   color: #fff;
   text-align: center;
-  padding: 0 16px;
+  padding: 0 1em;
   text-decoration: none;
 }
 
@@ -169,6 +169,24 @@ footer {
 @media screen and (max-width: 60em) {
   .container {
     width: calc(100% - 2.5em);
+  }
+
+  header {
+    float: none;
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  header .container {
+    flex-wrap: wrap;
+  }
+
+  header .container > * {
+    margin: 0 auto;
+  }
+
+  header ul li a {
+    padding: 0.8em;
   }
 }
 
