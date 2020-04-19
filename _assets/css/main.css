@@ -188,6 +188,10 @@ footer {
   header ul li a {
     padding: 0.8em;
   }
+
+  #main {
+    min-height: auto;
+  }
 }
 
 @media screen and (min-width: 60em) and (max-width: 70em) {
