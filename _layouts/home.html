@@ -12,7 +12,7 @@
 
       #background {
         z-index: -10;
-        background: url("/{% ministamp { source_path: '_assets/img/{{ site.background }}', destination_path: 'assets/img/{{ site.background }}' } %}");
+        background: url("/{% ministamp _assets/img/thinkpad-compressed.jpg assets/img/thinkpad-compressed.jpg %}");
         background-size: cover;
       }
 
@@ -106,5 +106,12 @@
       {{ content }}
     </div>
     {% include footer.html %}
+    <script>
+      window.addEventListener("load", function() {
+        let backgroundDiv = document.getElementById("background");
+        backgroundDiv.style.background = "url('/{% ministamp _assets/img/thinkpad.jpg assets/img/thinkpad.jpg %}')";
+        backgroundDiv.style.backgroundSize = "cover";
+      });
+    </script>
   </body>
 </html>
