@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.language }}" id="home">
+<html lang="{{ site.language }}">
   <head>
     <title>{{ site.title }}</title>
     {% include head.html %}
@@ -19,6 +19,61 @@
       #overlay {
         z-index: -5;
         background: rgba(187, 33, 33, 0.8);
+      }
+
+      html, a {
+        text-align: center;
+        color: #fff;
+      }
+
+      header, footer {
+        background: none;
+      }
+
+      header {
+        margin-bottom: 8em;
+      }
+
+      #logo {
+        visibility: hidden;
+      }
+
+      #main {
+        min-height: calc(100vh - 25.5em);
+      }
+
+      #main img {
+        width: 40em;
+        height: auto;
+        max-width: 80%;
+        margin-bottom: 4em;
+      }
+
+      #main h1 {
+        font-size: 3em;
+        margin-bottom: 2em;
+      }
+
+      #main a {
+        border: solid #fff 0.075em;
+        padding: 1.2em;
+        text-decoration: none;
+        font-size: 125%;
+        border-radius: 2em;
+      }
+
+      footer {
+        margin-top: 8em;
+      }
+
+      @media screen and (max-width: 60em) {
+        header {
+          margin-bottom: 3em;
+        }
+
+        #main img {
+          margin-bottom: 1em;
+        }
       }
     </style>
   </head>

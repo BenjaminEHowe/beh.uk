@@ -117,53 +117,6 @@ footer {
   padding: 1.25em;
 }
 
-/* homepage-specific rules */
-
-#home, #home a {
-  text-align: center;
-  color: #fff;
-}
-
-#home header, #home footer {
-  background: none;
-}
-
-#home header {
-  margin-bottom: 8em;
-}
-
-#home #logo {
-  visibility: hidden;
-}
-
-#home #main {
-  min-height: calc(100vh - 25.5em);
-}
-
-#home #main img {
-  width: 40em;
-  height: auto;
-  max-width: 80%;
-  margin-bottom: 4em;
-}
-
-#home #main h1 {
-  font-size: 3em;
-  margin-bottom: 2em;
-}
-
-#home #main a {
-  border: solid #fff 0.075em;
-  padding: 1.2em;
-  text-decoration: none;
-  font-size: 125%;
-  border-radius: 2em;
-}
-
-#home footer {
-  margin-top: 8em;
-}
-
 /* media queries */
 
 @media screen and (max-width: 60em) {
