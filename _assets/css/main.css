@@ -10,7 +10,11 @@ html {
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  padding: 0.5rem 0 1rem;
+  padding: 1rem 0;
+}
+
+p, ul {
+  line-height: 1.5;
 }
 
 h1 {
@@ -39,7 +43,6 @@ h6 {
 
 p {
   padding-bottom: 1rem;
-  line-height: 1.5;
 }
 
 em {
@@ -48,6 +51,11 @@ em {
 
 strong {
   font-weight: 600;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 2em;
 }
 
 /* header */
@@ -59,7 +67,7 @@ header, footer {
 header {
   height: 3em;
   padding: 1.5em 0;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 header .container {
@@ -107,7 +115,7 @@ header #logo img {
 /* footer */
 
 #main {
-  min-height: calc(100vh - 11.5em);
+  min-height: calc(100vh - 11em);
 }
 
 footer {
