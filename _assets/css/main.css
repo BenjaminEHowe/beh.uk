@@ -100,6 +100,24 @@ header #logo img {
   height: auto;
 }
 
+/* forms */
+
+button, input, textarea {
+  border: 1px solid #ccc;
+  border-radius: 0.25em;
+  font-family: 'Muli', sans-serif;
+  padding: 0.5em;
+}
+
+button {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+label {
+  padding-right: 0.5em;
+}
+
 /* footer */
 
 #main {
