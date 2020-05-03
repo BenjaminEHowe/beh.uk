@@ -1,0 +1,58 @@
+- 
+  organisation: "American Express"
+  title: "Graduate Engineer"
+  start: 2018
+  overview:
+    - "Used various languages (Java, Kotlin, React, etc.) and tools (Git, Maven, Cucumber, etc.) within scrum teams. Worked with product owners to size user stories and refine backlogs."
+    - "Cleaned code and added tests to improve reliability and development speed."
+    - "Created and implemented RFCs to enable the deployment of changes to production."
+    - "Desgined a technical test for apprentice candidates, to ensure that all discovery day attendees have strong technical ability. Chaired a panel to review test submissions."
+    - "Participated in the UK Product Summit Dream Team twice, managing the budget on the first occasion and leading approximately 20 graduates on the second."
+    - "Trained colleagues in new technologies, including Java, Jenkins, and BDD."
+-
+  organisation: "University of Reading"
+  title: "Student Lab Demonstrator"
+  start: 2017
+  end: 2018
+  overview:
+    - "Contributed to various first- and second-year lab sessions, including authorising marks."
+-
+  organisation: "Junction11 Radio"
+  title: "Head of Technology"
+  start: 2016
+  end: 2017
+  overview:
+    - "Developed, documented, and maintained the entire technology stack."
+    - "Assisted University of Reading IT services in enabling IPv6 throughout the studio."
+-
+  organisation: "Krystal Hosting"
+  title: "Software Engineer"
+  start: 2017
+  end: 2017
+  overview:
+    - Developed automated self-service tools to mitigate repetitive support tickets.
+-
+  organisation: "American Express"
+  title: "First Foundry Analyst, Technology"
+  start: 2016
+  end: 2016
+  overview:
+    - "Became an internal expert on the Elastic Stack and helped lead an internal hack day."
+    - "Created and deployed to production a Kibana dashboard to monitor SLA compliance."
+-
+  organisation: "Mythic Beasts"
+  title: "Software Developer"
+  start: 2014
+  end: 2015
+  overview:
+    - "Wrote a modular Perl script to detect WordPress blogs with unpatched security holes."
+    - "Led a <a href=\"https://www.mythic-beasts.com/blog/2014/11/14/hiphop-and-wordpress-if-youre-tired-of-tea-then-youre-tired-of-life/\">research project on HHVM</a>; increased transactions per second by 600%."
+-
+  organisation: "Wolfpack Fashion"
+  title: "Director of IT"
+  start: 2012
+  end: 2013
+  overview:
+    - "Formed a start-up selling custom clothing as part of the Young Enterprise scheme."
+    - "Set up a website and online store, ensuring compliance with PCI-DSS."
+    - "Won multiple regional awards including Best Young Enterprise Company and Best IT."

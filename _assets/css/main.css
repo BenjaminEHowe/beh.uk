@@ -37,7 +37,7 @@ em {
   font-style: italic;
 }
 
-strong {
+strong, th {
   font-weight: 600;
 }
 
