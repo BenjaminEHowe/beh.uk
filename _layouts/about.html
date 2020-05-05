@@ -4,6 +4,17 @@ layout: default
 
 {{ content }}
 
+<h2>Projects</h2>
+<div id="projects">
+  {% for project in site.data.projects %}
+    <div class="project">
+      <h3>{{ project.title }}</h3>
+      <img alt="{{ project.title }}" src="/{% ministamp { source_path: '_assets/img/{{ project.image }}', destination_path: 'assets/img/{{ project.image }}' } %}">
+      <p>{{ project.description }}</p>
+    </div>
+  {% endfor %}
+</div>
+
 <h2>Professional Experience</h2>
 {% comment %} TODO: replace this table with CSS so that we can display the organisation / title, date, and overview on separate lines on mobile. {% endcomment %}
 <table style="width:100%">

@@ -100,6 +100,35 @@ header #logo img {
   height: auto;
 }
 
+/* about page: projects */
+
+#projects {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+
+.project {
+  flex:0 1 30%;
+  border:1px solid #e6e6e6;
+  box-shadow:0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+  margin: 1em 0;
+}
+
+.project h3 {
+  margin: auto 1em;
+}
+
+.project img {
+  width:100%;
+  height:auto;
+  margin-bottom:0.75em;
+}
+
+.project p {
+  margin: auto 1em;
+}
+
 /* forms */
 
 button, input, textarea {
@@ -168,6 +197,10 @@ footer {
 
   #main {
     min-height: auto;
+  }
+
+  .project {
+    flex:0 1 100%;
   }
 
   #home header {
