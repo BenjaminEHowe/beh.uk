@@ -9,6 +9,10 @@ html {
 
 /* typography */
 
+h1, h2, h3, h4, h5, h6, strong, th {
+  font-weight: 600;
+}
+
 h1, h2, h3, h4, h5, h6 {
   padding: 1rem 0;
 }
@@ -26,7 +30,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.17m;
+  font-size: 1.17em;
 }
 
 p {
@@ -35,10 +39,6 @@ p {
 
 em {
   font-style: italic;
-}
-
-strong, th {
-  font-weight: 600;
 }
 
 ul {
