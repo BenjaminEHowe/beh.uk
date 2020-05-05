@@ -111,6 +111,7 @@ header #logo img {
 .project {
   flex:0 1 30%;
   border:1px solid #e6e6e6;
+  border-radius: 0.25em;
   box-shadow:0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
   margin: 1em 0;
 }
