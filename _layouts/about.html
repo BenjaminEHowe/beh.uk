@@ -20,7 +20,7 @@ layout: default
 <table style="width:100%">
   {% for organisation in site.data.experience %}
     <tr>
-      <td><img alt="{{ organisation.name }} logo" src="/{% ministamp { source_path: '_assets/img/logos/{{ organisation.logo }}', destination_path: 'assets/img/logos/{{ organisation.logo }}' } %}" style="padding:1.25rem 1.25rem 0 0"></td>
+      <td><img alt="{{ organisation.name }} logo" src="/{% ministamp { source_path: '_assets/img/logos/{{ organisation.logo }}', destination_path: 'assets/img/logos/{{ organisation.logo }}' } %}" style="width:3.125rem; padding:1.25rem 1.25rem 0 0"></td>
       <td style="vertical-align:top">
         <h3 style="padding:1.25rem 0 0">{{ organisation.name }}</h3>
         {% for role in organisation.roles %}
