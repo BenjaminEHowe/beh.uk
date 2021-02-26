@@ -5,7 +5,7 @@ title: Contact
 
 If you'd like to get in touch then you can contact me using the below form.
 
-<form name="contact" action="thank-you" netlify netlify-honeypot="Name">
+<form id="contact-form" method="post" action="https://api.formcake.com/api/form/7a4d78fe-310e-457f-965c-1a23b01893d8/submission">
   <fieldset style="display:none">
     <label for="name">Leave blank if you're human:</label>
     <input type="text" name="Name" id="name" placeholder="Leave blank if you're human">
