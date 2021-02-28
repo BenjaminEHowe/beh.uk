@@ -10,3 +10,7 @@ plugins:
 exclude:
   - netlify.toml
   - README.md
+
+minibundle:
+  minifier_commands:
+    css: node_modules/.bin/uglifycss
