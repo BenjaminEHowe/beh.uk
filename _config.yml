@@ -1,6 +1,6 @@
 language: "en-GB"
 logo: "beh.svg"
-permalink: /:year/:title:output_ext
+permalink: /:year/:title
 tagline: "Software Engineer"
 title: "Benjamin Edward Howe"
 
