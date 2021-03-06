@@ -5,16 +5,15 @@ layout: default
 {{ content }}
 
 <h2>Professional Experience</h2>
-{% comment %} TODO: replace this table with CSS so that we can display the organisation / title, date, and overview on separate lines on mobile. {% endcomment %}
-<table style="width:100%">
+<table id="professional-experience">
   {% for organisation in site.data.experience %}
     <tr>
-      <td><img alt="{{ organisation.name }} logo" src="/{% ministamp { source_path: '_assets/img/logos/{{ organisation.logo }}', destination_path: 'assets/img/logos/{{ organisation.logo }}' } %}" style="width:3.125rem; padding:1.25rem 1.25rem 0 0"></td>
-      <td style="vertical-align:top">
-        <h3 style="padding:1.25rem 0 0">{{ organisation.name }}</h3>
+      <td><img alt="{{ organisation.name }} logo" src="/{% ministamp { source_path: '_assets/img/logos/{{ organisation.logo }}', destination_path: 'assets/img/logos/{{ organisation.logo }}' } %}" class="logo"></td>
+      <td>
+        <h3>{{ organisation.name }}</h3>
         {% for role in organisation.roles %}
-          <h4 style="padding:1rem 0 0">{{ role.title }}</h4>
-          <p style="padding-bottom:0.5rem">
+          <h4>{{ role.title }}</h4>
+          <p class="dates">
             {% if role.end %}
               {% if role.start == role.end %}
                 {{ role.start }}
