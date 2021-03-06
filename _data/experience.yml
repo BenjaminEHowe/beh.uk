@@ -1,0 +1,76 @@
+- 
+  name: "American Express"
+  logo: "amex.png"
+  roles:
+    -
+      title: "Full Stack Software Engineer (Engineer II)"
+      start: 2020
+      overview: "Currently working with the Business Travel Account team, I'm helping to build a tool which will enrich travel-related transactions with additional metadata, using Java, Maven, Spring Boot, Docker, Cucumber / BDD, and CI/CD (Jenkins).</p><p>I've also assisted the early careers team in assessing apprentice, intern, and graduate programme candidates, including designing a Codility technical assessment for our global intern and graduate programme candidates."
+    -
+      title: "Graduate Engineer"
+      start: 2018
+      end: 2020
+      overview: "Participating in the graduate scheme, I rotated through International Loyalty & Benefits, Cross-Border Payments (now Global Pay), Application Security, and Enterprise Token Vault. I worked with a variety of technologies including Java, Kotlin, Spring Boot, Python, Postgres, Docker, Cucumber / BDD, and CI/CD (Jenkins)."
+-
+  name: "University of Reading"
+  logo: "uni-rdg.png"
+  roles:
+    -
+      title: "Student Lab Demonstrator"
+      start: 2017
+      end: 2018
+      overview: "I assisted first- and second-year students with various programming labs. I helped students to revise lecture content so they could complete their assignments, and was part of the team responsible for authorising marks."
+-
+  name: "Junction11 Radio"
+  logo: "junction11.png"
+  roles:
+    -
+      title: "Head of Technology"
+      start: 2016
+      end: 2017
+      overview: "I re-engineered significant portions of the internal technology stack, including the studio webcams, internal archive, and website back-end. I added significant amounts of monitoring and graphing to various pieces of infrastructure, allowing future issues to be spotted and fixed much more rapidly. I also enabled IPv6 throughout the studio, assisting University IT Services when the initial deployment didn't work as expected.</p><p>I also worked more widely across RUSU Media assisting The Spark Newspaper when their website was hacked, by building a simple \"scanner\" tool in PHP."
+-
+  name: "Krystal Hosting"
+  logo: "krystal-hosting.png"
+  roles:
+    -
+      title: "Software Developer"
+      start: 2017
+      end: 2017
+      overview: "I assisted with customer support through WHMCS. I also developed a tool to help customers discover the email configuration for their Krystal-hosted emails, as well as other common email providers."
+-
+  name: "American Express"
+  logo: "amex.png"
+  roles:
+    -
+      title: "Analyst - Technologies Summer Internship Programme 2016"
+      start: 2016
+      end: 2016
+      overview: "I spent my summer working for American Express, within their Loyalty & Partnerships team. I taught myself how to use the elastic stack for monitoring and became an internal expert within a couple of weeks. I worked with various teams to progress my work through the development and testing environments into production, so it could start delivering value to the business. I also enhanced my presentation skills by presenting to a group of technology VPs and collaborated with other interns to organise and run a \"CoderDojo\" session for employees' children."
+-
+  name: "Goldman Sachs"
+  logo: "gs.png"
+  roles:
+    -
+      title: "Spring Intern (Technology Division)"
+      start: 2016
+      end: 2016
+      overview: "I secured a place on this competitive programme to envisage myself in a role at the firm. I worked on a project with a diverse team to complete the analysis and design for converting a desktop application to iOS, presenting findings to peers and more senior colleagues. My team were joint winners out of our cohort for this presentation. I also shadowed roles in various business units, and attended senior leadership discussions."
+-
+  name: "Mythic Beasts"
+  logo: "mb.png"
+  roles:
+    -
+      title: "Software Developer"
+      start: 2014
+      end: 2015
+      overview: "I worked at Mythic Beasts during my gap year, gaining a wide variety of experience from on-site hardware maintenance to managing client machines to operating customer support queues. I also participated in the on-call rota for serious faults occurring out-of-hours.</p><p>After noticing repeat spam incidents involving old WordPress blogs on our shared hosting servers, I wrote a modular Perl script to detect WordPress blogs with unpatched security holes. This resulted in a number of old blogs being updated or removed, and ultimately saved staff time removing IP addresses from blacklists, as well helping our clients to avoid the embarrassment of getting \"hacked\".</p><p>I also led <a href=\"https://www.mythic-beasts.com/blog/2014/11/14/hiphop-and-wordpress-if-youre-tired-of-tea-then-youre-tired-of-life/\">a research project into the use of HHVM</a> to improve the performance of a high-profile WordPress blog."
+-
+  name: "Wolfpack Fashion (a branch of Young Enterprise)"
+  logo: "wolfpack.jpg"
+  roles:
+    -
+      title: "Director of IT"
+      start: 2012
+      end: 2013
+      overview: "I was the Director of IT at our school Young Enterprise company, \"Wolfpack Fashion\". My responsibilities included managing customer communications, setting up and maintaining the website and online store, and order dispatches. We were one of the only Young Enterprise companies to set up a PCI-DSS compliant card payment system, allowing us to take online orders with ease. Wolfpack Fashion won \"Best Young Enterprise Company\" in Kent, as well as \"Best IT\" and \"Best Young Enterprise Company\" in West Kent."

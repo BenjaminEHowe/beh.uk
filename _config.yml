@@ -1,0 +1,18 @@
+language: "en-GB"
+logo: "beh.svg"
+permalink: /:year/:title
+tagline: "Software Engineer"
+title: "Benjamin Edward Howe"
+author: "Benjamin Howe"
+
+plugins:
+  - jekyll-feed
+  - jekyll/minibundle
+
+exclude:
+  - netlify.toml
+  - README.md
+
+minibundle:
+  minifier_commands:
+    css: node_modules/.bin/uglifycss

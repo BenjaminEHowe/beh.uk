@@ -1,0 +1,326 @@
+html {
+  font-family: 'Mulish', sans-serif;
+  overflow-y: scroll;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6, strong, th {
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 1rem 0;
+}
+
+p, ul {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+p, ul {
+  padding-bottom: 0.5rem;
+}
+
+em {
+  font-style: italic;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 2em;
+}
+
+p + ul {
+  margin-top: -0.375rem;
+}
+
+/* header */
+
+header, footer {
+  background: #961c1c;
+}
+
+header {
+  height: 3em;
+  padding: 1.5em 0;
+  margin-bottom: 0.5em;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header .container > * {
+  float: left;
+}
+
+#nav-top-social ul {
+  float: right;
+}
+
+#nav-top-social img {
+  height: 1.5em;
+  width: auto;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  float: left;
+}
+
+header ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0 1em;
+  text-decoration: none;
+}
+
+header #logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* floats (for images etc.) */
+
+.float-right {
+  float: right;
+}
+
+img.float-right {
+  margin: 0 0 0.5rem 1rem;
+}
+
+.float-left {
+  float: left;
+}
+
+img.float-left {
+  margin: 0 1rem 0.5rem 0;
+}
+
+/* forms */
+
+button, input, textarea {
+  border: 1px solid #ccc;
+  border-radius: 0.25em;
+  font-family: 'Muli', sans-serif;
+  padding: 0.5em;
+}
+
+button {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+label {
+  padding-right: 0.5em;
+}
+
+/* professional experience (about page) */
+
+table#professional-experience td {
+  vertical-align: top;
+}
+
+table#professional-experience h3 {
+  padding: 0.5rem 0 0;
+  margin-bottom: -0.5rem;
+}
+
+table#professional-experience h4 {
+  padding: 0.875rem 0 0.125rem;
+}
+
+table#professional-experience p {
+  padding-bottom: 0.375rem;
+}
+
+table#professional-experience img.logo {
+  padding: 0.5rem 1.25rem 0 0;
+  width: 3.125rem;
+}
+
+table#professional-experience tr + tr td {
+  padding-top: 0.75rem;
+}
+
+/* footer */
+
+#main {
+  min-height: calc(100vh - 11em);
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  margin-top: 3em;
+  padding: 1.25em;
+}
+
+/* media queries */
+
+@media screen and (max-width: 59.99em) {
+  .container {
+    width: calc(100% - 2.5em);
+  }
+
+  header {
+    float: none;
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  header .container {
+    flex-wrap: wrap;
+  }
+
+  header .container > * {
+    margin: 0 auto;
+  }
+
+  header #logo {
+    width: 100%;
+  }
+
+  header #logo img {
+    display: block;
+    margin: 0 auto 1em;
+    max-width: 10em;
+  }
+
+  header ul li a {
+    padding: 0 0.75em 1.2em;
+  }
+
+  #main {
+    min-height: auto;
+  }
+
+  .project {
+    flex:0 1 100%;
+  }
+
+  #home header {
+    margin-bottom: 3em;
+  }
+
+  #home #main img {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 60em) and (max-width: 80em) {
+  .container {
+    width: 58em;
+  }
+
+  #nav-top-internal, #nav-top-social {
+    width: 24em;
+  }
+
+  #logo {
+    margin-left: 24em; /* width of #nav-top-internal */
+    width: 10em;
+  }
+
+  #nav-top-internal {
+    margin-left: -34em; /* width of #logo plus width of #nav-top-internal */
+  }
+
+  #nav-top-social {
+    margin-left: 10em;
+  }
+}
+
+@media screen and (min-width: 80em) and (max-width: 90em) {
+  .container {
+    width: 70em;
+  }
+
+  #nav-top-internal, #nav-top-social {
+    width: 29em;
+  }
+
+  #logo {
+    margin-left: 29em; /* width of #nav-top-internal */
+    width: 12em;
+  }
+
+  #nav-top-internal {
+    margin-left: -41em; /* width of #logo plus width of #nav-top-internal */
+  }
+
+  #nav-top-social {
+    margin-left: 12em;
+  }
+}
+
+@media screen and (min-width: 90em) and (max-width: 105em) {
+  .container {
+    width: 80em;
+  }
+
+  #nav-top-internal, #nav-top-social {
+    width: 32.5em;
+  }
+
+  #logo {
+    margin-left: 32.5em; /* width of #nav-top-internal */
+    width: 15em;
+  }
+
+  #nav-top-internal {
+    margin-left: -47.5em; /* width of #logo plus width of #nav-top-internal */
+  }
+
+  #nav-top-social {
+    margin-left: 15em;
+  }
+}
+
+@media screen and (min-width: 105em) {
+  .container {
+    width: 90em;
+  }
+
+  #nav-top-internal, #nav-top-social {
+    width: 35em;
+  }
+
+  #logo {
+    margin-left: 35em; /* width of #nav-top-internal */
+    width: 20em;
+  }
+
+  #nav-top-internal {
+    margin-left: -55em; /* width of #logo plus width of #nav-top-internal */
+  }
+
+  #nav-top-social {
+    margin-left: 20em;
+  }
+}

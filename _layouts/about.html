@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<h2>Professional Experience</h2>
+<table id="professional-experience">
+  {% for organisation in site.data.experience %}
+    <tr>
+      <td><img alt="{{ organisation.name }} logo" src="/{% ministamp { source_path: '_assets/img/logos/{{ organisation.logo }}', destination_path: 'assets/img/logos/{{ organisation.logo }}' } %}" class="logo"></td>
+      <td>
+        <h3>{{ organisation.name }}</h3>
+        {% for role in organisation.roles %}
+          <h4>{{ role.title }}</h4>
+          <p class="dates">
+            {% if role.end %}
+              {% if role.start == role.end %}
+                {{ role.start }}
+              {% else %}
+                {{ role.start }}&ndash;{{ role.end | slice: -2, 2 }}
+              {% endif %}
+            {% else %}
+              Since {{ role.start }}
+            {% endif %}
+          </p>
+          <p>{{ role.overview }}</p>
+        {% endfor %}
+      </td>
+    </tr>
+  {% endfor %}
+</table>

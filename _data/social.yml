@@ -1,0 +1,9 @@
+profiles:
+  - type: facebook
+    url: https://fb.com/BenjaminEHowe
+  - type: twitter
+    url: https://twitter.com/BenjaminEHowe
+  - type: linkedin
+    url: https://www.linkedin.com/in/benjaminehowe/
+  - type: github
+    url: https://github.com/BenjaminEHowe
