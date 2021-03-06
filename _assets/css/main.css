@@ -152,7 +152,11 @@ table#professional-experience h3 {
 }
 
 table#professional-experience h4 {
-  padding: 1rem 0 0.125rem;
+  padding: 0.875rem 0 0.125rem;
+}
+
+table#professional-experience p {
+  padding-bottom: 0.375rem;
 }
 
 table#professional-experience img.logo {
@@ -161,7 +165,7 @@ table#professional-experience img.logo {
 }
 
 table#professional-experience tr + tr td {
-  padding-top: 1.25rem;
+  padding-top: 0.75rem;
 }
 
 /* footer */
