@@ -3,8 +3,10 @@ logo: "beh.svg"
 permalink: /:year/:title
 tagline: "Software Engineer"
 title: "Benjamin Edward Howe"
+author: "Benjamin Howe"
 
 plugins:
+  - jekyll-feed
   - jekyll/minibundle
 
 exclude:
