@@ -16,7 +16,7 @@
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=14400"
+    Cache-Control = "public, max-age=63072000"
 
 [[redirects]]
   from = "/*"
