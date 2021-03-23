@@ -1,9 +1,9 @@
 [build]
-  command = 'curl "https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;1,400;1,600&display=swap" --output _assets/css/gfonts.css && npm install uglifycss && jekyll build'
+  command = 'npm install uglifycss && jekyll build'
   publish = "_site"
 
 [context.branch-deploy]
-  command = 'curl "https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;1,400;1,600&display=swap" --output _assets/css/gfonts.css && npm install uglifycss && jekyll build --drafts --future'
+  command = 'npm install uglifycss && jekyll build --drafts --future'
 
 [build.environment]
   JEKYLL_ENV = "production"
