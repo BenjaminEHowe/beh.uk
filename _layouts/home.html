@@ -107,8 +107,14 @@
     </div>
     {% include footer.html %}
     <script>
+      var supportsWebP = false;
+      var webP = new Image();
+      webP.onload = function(){
+        supportsWebP = true;
+      };
+      webP.src = 'data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoBAAEALmk0mk0iIiIiIgBoSygABc6zbAAA/v56QAAAAA==';
       window.addEventListener("load", () => {
-        fetch("/{% ministamp _assets/img/thinkpad.jpg assets/img/thinkpad.jpg %}")
+        fetch(supportsWebP? "/{% ministamp _assets/img/thinkpad.webp assets/img/thinkpad.webp %}" : "/{% ministamp _assets/img/thinkpad.jpg assets/img/thinkpad.jpg %}")
         .then( response => response.blob() )
         .then( blob => {
           let reader = new FileReader();
