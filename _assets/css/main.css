@@ -171,7 +171,7 @@ table#professional-experience tr + tr td {
 /* footer */
 
 #main {
-  min-height: calc(100vh - 11em);
+  min-height: calc(100vh - 13em);
 }
 
 footer {
