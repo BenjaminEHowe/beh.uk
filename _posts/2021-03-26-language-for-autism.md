@@ -10,7 +10,7 @@ As we approach [World Autism Awareness Week](https://www.autism.org.uk/get-invol
 
 ## Neurodivergent / Neurotypical
 
-Nneurodivergent people are individuals who have neurological differences such as Autism, Dyslexia, or ADHD. Conversely, neurotypical people do not have these differences, although sometimes the term "neurotypical" is used to indicate the lack of a specific difference -- for example, an autistic community may use "neurotypical" to indicate non-autistic people, but may have other neurological differences. These differences may be detected through tests for things like verbal and non-verbal reasoning, information processing speed, and executive function, however these tests are not always conclusive.
+Neurodivergent people are individuals who have neurological differences such as Autism, Dyslexia, or ADHD. Conversely, neurotypical people do not have these differences, although sometimes the term "neurotypical" is used to indicate the lack of a specific difference -- for example, an autistic community may use “neurotypical” for a non-autistic person who may, however, may have other neurological differences. These differences may be detected through tests for things like verbal and non-verbal reasoning, information processing speed, and executive function, however these tests are not always conclusive.
 
 ## Identity-first / Person-first Language
 
@@ -18,7 +18,7 @@ Nneurodivergent people are individuals who have neurological differences such as
 
 ## Treatment / "Cures"
 
-Autism is a permanent disability (not an illness that people "suffer" from). There is no known "cure" and many autistic people see their autism as a core part of who they are, and therefore do not seek a "cure". Autistic people won't "grow out" of their autism, although as they get older they may become better at masking some of their traits to in order to fit into a generally unaccommodating world. When talking about supporting autistic people, think about "adjustments" or "accommodations" which neurotypical people (and society as a whole) can make, not "treatments" to "fix" the autistic person.
+Autism is a permanent disability, not an illness that people "suffer" from.. There is no known "cure" and many autistic people see their autism as a core part of who they are, and therefore do not seek a "cure". Autistic people won't "grow out" of their autism, although as they get older they may become better at masking some of their traits to in order to fit into a generally unaccommodating world. When talking about supporting autistic people, think about "adjustments" or "accommodations" which neurotypical people (and society as a whole) can make, not "treatments" to "fix" the autistic person.
 
 The [National Autistic Society has a list containing examples of adjustments](https://www.autism.org.uk/advice-and-guidance/topics/employment/employing-autistic-people/employers) which may be suitable, however it's usually best to ask the individual if any accommodations would be helpful.
 
@@ -46,7 +46,7 @@ Aspergers was the term historically used to describe "autistic people with avera
 
 ## Symbols
 
-Various symbols are used to represent autism and autism awareness. Perhaps the most common symbol is the puzzle piece, however a number of autistic people disapprove of this due the suggestion that autistic people are "a puzzle to be solved" or "a puzzle missing a piece". Another issue with the puzzle piece symbol is that it is used as the logo for Autism Speaks, a [problematic autism advocacy group](https://www.washingtonpost.com/outlook/2020/02/14/biggest-autism-advocacy-group-is-still-failing-too-many-autistic-people/).
+Various symbols are used to represent autism and autism awareness. Perhaps the most common symbol is the puzzle piece, however a number of autistic people disapprove of this due to the suggestion that autistic people are "a puzzle to be solved" or "a puzzle missing a piece". Another issue with the puzzle piece symbol is that it is used as the logo for Autism Speaks, a [problematic autism advocacy group](https://www.washingtonpost.com/outlook/2020/02/14/biggest-autism-advocacy-group-is-still-failing-too-many-autistic-people/).
 
 A better symbol to use when promoting autism awareness (and acceptance) is a [golden infinity symbol](https://autisticuk.org/going-gold-for-autism-acceptance/) (the chemical symbol for gold is Au, and the infinity symbol represents the infinite diversity among autistic people). Alternatively the [rainbow infinity symbol](https://autisticuk.org/neurodiversity/) can be used to represent general neurodiversity.
 
