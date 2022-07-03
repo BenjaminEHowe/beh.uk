@@ -79,7 +79,7 @@ The standard speeds that Openreach offer on their network are:
 - 550Mb/s down and 165Mb/s up (business-focussed product, expensive)
 - 1,000Mb/s down and 220Mb/s up (business-focussed product, expensive)
 
-Note that not internet providers typically don't offer all of these speeds, and [a small number (less than 50,000) of older Openreach full fibre connections are limited to 330Mb/s](https://www.ispreview.co.uk/index.php/2022/06/openreach-still-coy-on-plan-to-fix-330mbps-capped-uk-fttp-lines.html). Alternative internet networks (such as [CityFibre](https://cityfibre.com/about-us/rollout) and [Hyperoptic](https://www.hyperoptic.com/map/?residential)) offer different speed tiers, and often offer symmetrical speeds (i.e. the same speed down and up).
+Note that internet providers typically don't offer all of these options, and [a small number (less than 50,000) of older Openreach full fibre connections are limited to 330Mb/s](https://www.ispreview.co.uk/index.php/2022/06/openreach-still-coy-on-plan-to-fix-330mbps-capped-uk-fttp-lines.html). Alternative internet networks (such as [CityFibre](https://cityfibre.com/about-us/rollout) and [Hyperoptic](https://www.hyperoptic.com/map/?residential)) offer different speed tiers, and often offer symmetrical speeds (i.e. the same speed down and up).
 
 As a general rule of thumb I suggest allowing 40Mb/s of download speed per person and 10Mb/s of upload speed per person. This means you should consider:
 
