@@ -1,6 +1,6 @@
 # [www.beh.uk](https://www.beh.uk)
 
-Benjamin Howe's personal website, [deployed to Netlify](https://app.netlify.com/sites/beh/deploys). Originally generated from [the blank Jekyll template](https://github.com/BenjaminEHowe/jekyll-blank).
+Benjamin Howe's personal website, deployed to Cloudflare Pages. Originally generated from [the blank Jekyll template](https://github.com/BenjaminEHowe/jekyll-blank).
 
 ## Installation
 
