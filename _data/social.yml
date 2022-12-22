@@ -3,6 +3,8 @@ profiles:
     url: https://fb.com/BenjaminEHowe
   - type: twitter
     url: https://twitter.com/BenjaminEHowe
+  - type: mastodon
+    url: https://fosstodon.org/@BenjaminEHowe
   - type: linkedin
     url: https://www.linkedin.com/in/benjaminehowe/
   - type: github
