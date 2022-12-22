@@ -9,6 +9,9 @@ plugins:
   - jekyll-feed
   - jekyll/minibundle
 
+include:
+  - _redirects
+
 exclude:
   - README.md
 
