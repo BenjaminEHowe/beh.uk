@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/87a48a2b-fe8d-4ba3-8f9f-8955ac45d904/deploy-status)](https://app.netlify.com/sites/beh/deploys)
-
 # [www.beh.uk](https://www.beh.uk)
 
 Benjamin Howe's personal website, [deployed to Netlify](https://app.netlify.com/sites/beh/deploys). Originally generated from [the blank Jekyll template](https://github.com/BenjaminEHowe/jekyll-blank).
