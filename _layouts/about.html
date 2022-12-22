@@ -8,7 +8,7 @@ layout: default
 <table id="professional-experience">
   {% for organisation in site.data.experience %}
     <tr>
-      <td><img alt="{{ organisation.name }} logo" src="/{% ministamp { source_path: '_assets/img/logos/{{ organisation.logo }}', destination_path: 'assets/img/logos/{{ organisation.logo }}' } %}" class="logo"></td>
+      <td><img alt="{{ organisation.name }} logo" src="https://cdn.beh.uk/img/logos/{{ organisation.logo }}" class="logo"></td>
       <td>
         <h3>{{ organisation.name }}</h3>
         {% for role in organisation.roles %}

@@ -114,7 +114,7 @@
       };
       webP.src = 'data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoBAAEALmk0mk0iIiIiIgBoSygABc6zbAAA/v56QAAAAA==';
       window.addEventListener("load", () => {
-        fetch(supportsWebP? "/{% ministamp _assets/img/thinkpad.webp assets/img/thinkpad.webp %}" : "/{% ministamp _assets/img/thinkpad.jpg assets/img/thinkpad.jpg %}")
+        fetch(supportsWebP? "https://cdn.beh.uk/img/thinkpad.webp" : "https://cdn.beh.uk/img/thinkpad.jpg")
         .then( response => response.blob() )
         .then( blob => {
           let reader = new FileReader();
