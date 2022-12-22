@@ -2,4 +2,4 @@
 layout: home
 ---
 
-[Download CV]({% ministamp _assets/CV.pdf assets/CV.pdf %})
+[Download CV](https://cdn.beh.uk/CV.pdf)
