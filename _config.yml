@@ -10,7 +10,6 @@ plugins:
   - jekyll/minibundle
 
 exclude:
-  - netlify.toml
   - README.md
 
 minibundle:
