@@ -7,6 +7,10 @@ html {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6, strong, th {
@@ -104,7 +108,13 @@ header #logo img {
   height: auto;
 }
 
-/* floats (for images etc.) */
+/* alignment / floats (for images etc.) */
+
+.centred {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .float-right {
   float: right;
@@ -162,6 +172,7 @@ table#professional-experience p {
 table#professional-experience img.logo {
   padding: 0.5rem 1.25rem 0 0;
   width: 3.125rem;
+  max-width: none;
 }
 
 table#professional-experience tr + tr td {
