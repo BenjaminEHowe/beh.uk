@@ -13,7 +13,7 @@ Initially I measured speeds of 946Mbps, matching up with the [expected throughpu
 I then decided to try upgrading the SFP+ WAN interface on my router from one gigabit to ten gigabits and I was surprised to see even faster speeds of over 1,100Mbps!
 Swish's symmetrical speeds are refreshing as internet connections from Openreach-based providers and Virgin Media are heavily asymmetrical -- for example, at the time of writing the fastest broadband connection offered by Virgin only had an upload speed of 52Mbps.
 
-[![Speedtest.net result indicating speeds to Mythic Beasts of 946Mbps](https://cdn.beh.uk/img/speedtest-swish.png){: .centred}](https://www.speedtest.net/result/d/1cdb2c18-456a-4135-9205-bc313ba56f98)
+[![Speedtest.net result indicating speeds to Mythic Beasts of over 1,100Mbps](https://cdn.beh.uk/img/speedtest-swish.png){: .centred}](https://www.speedtest.net/result/14427350669)
 
 Internet connections aren't just about speed though -- latency is important too (ask gamers or people trying to use remote desktop software, for example).
 I host a [RIPE Atlas](https://atlas.ripe.net/) probe ([ID 1002782](https://atlas.ripe.net/probes/1002782)) on my network.
