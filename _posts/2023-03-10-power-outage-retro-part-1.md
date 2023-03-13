@@ -1,15 +1,19 @@
 ---
 layout: default
-title: "Power Outage 9 March 2023: Retrospective (Part 1)"
+title: "Power Outages 9 & 12 March 2023: Retrospective (Part 1)"
 categories: networking
 ---
 
-This post represents the first of a two part mini-series retrospecting on [the widespread power outages in Sussex on 9 March 2023, which affected over 35,000 homes](https://www.theargus.co.uk/news/23375679.outages-fixed-sussex-following-power-cuts/) (including mine!).
+**Update 13 March**: added details from events on 12 March.
+
+This post represents the first of a two part mini-series retrospecting on [the widespread power outages in Sussex on 9 and 12 March 2023, which affected over 35,000 homes](https://www.bbc.co.uk/news/uk-england-sussex-64933050) (including mine!).
 Specifically I'll be thinking about at how it affected me and how I could reduce the personal impact of a future outage.
 
 ## Timeline of events
 
-All times are Greenwich Mean Time, and written using the 24 hour clock. All events happened on 9 March 2023.
+All times are Greenwich Mean Time, and written using the 24 hour clock.
+
+### Thursday 9 March
 
 0336: Sensors in my home stopped sending data over the internet. These sensors do not have any power backup, so stop working immedately when a power outage occurs.
 
@@ -22,6 +26,14 @@ All times are Greenwich Mean Time, and written using the 24 hour clock. All even
 1258: updown.io reports that my home internet connection is back online.
 
 1300: Sensors resume sending data.
+
+### Sunday 12 March
+
+1246: Sensors again stop sending data.
+
+1315: Internet connection goes offline (UPS runs out of power).
+
+1616: Sensors resume sending data.
 
 ## Brief Summary
 
