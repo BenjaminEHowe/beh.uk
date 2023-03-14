@@ -4,6 +4,8 @@ title: "Power Outages 9 & 12 March 2023: Retrospective (Part 1)"
 categories: networking
 ---
 
+**Update 14 March**: [UK Power Networks have published a page on their website providing some additional information](https://web.archive.org/web/20230314142048/https://www.ukpowernetworks.co.uk/incident-detail/haywards-heath-and-burgess-hill).
+
 **Update 13 March**: added details from events on 12 March.
 
 This post represents the first of a two part mini-series retrospecting on [the widespread power outages in Sussex on 9 and 12 March 2023, which affected over 35,000 homes](https://www.bbc.co.uk/news/uk-england-sussex-64933050) (including mine!).
