@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 0;
 }
 
-p, ul {
+p, ol, ul {
   line-height: 1.5;
 }
 
@@ -37,7 +37,7 @@ h3 {
   font-size: 1.17em;
 }
 
-p, ul {
+p, ol, ul, pre {
   padding-bottom: 0.5rem;
 }
 
@@ -45,13 +45,24 @@ em {
   font-style: italic;
 }
 
+ol {
+  list-style: decimal;
+}
+
 ul {
   list-style: disc;
+}
+
+ul, ol {
   margin-left: 2em;
 }
 
 p + ul {
   margin-top: -0.375rem;
+}
+
+code, pre {
+  font-family: monospace;
 }
 
 /* header */
