@@ -17,4 +17,4 @@ exclude:
 
 minibundle:
   minifier_commands:
-    css: node_modules/.bin/uglifycss
+    css: cat # TODO: replace this with a proper minifier
