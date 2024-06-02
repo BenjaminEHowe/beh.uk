@@ -48,4 +48,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy _site --project-name=beh-uk-gha --branch=${{ steps.extract_branch.outputs.branch }} --commit-dirty=true
+          command: pages deploy _site --project-name=beh-uk --branch=${{ steps.extract_branch.outputs.branch }} --commit-dirty=true
