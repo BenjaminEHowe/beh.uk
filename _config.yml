@@ -15,6 +15,7 @@ include:
 exclude:
   - functions
   - README.md
+  - src
 
 minibundle:
   minifier_commands:
