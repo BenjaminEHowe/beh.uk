@@ -20,10 +20,14 @@ export async function onRequest(context) {
 
 
 function formToText(form) {
-  var text = ""
+  var text = "";
   for (const property in form) {
-    text += `${property}:\n`
-    text += `${form[property]}\n\n`
+    text += `${property}:\n`;
+    var value = form[property];
+    if (typeof value !== "string") {
+      value = JSON.stringify(value)
+    }
+    text += `${value}\n\n`;
   }
   return text
 }
