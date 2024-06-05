@@ -8,7 +8,7 @@ export async function onRequest(context) {
   form.cf = context.request.cf;
   form.headers = Object.fromEntries(context.request.headers.entries());
 
-  const sent = await sendFormViaResend(context.env.RESEND_KEY, context.env.EMAIL_BEN, "New contact form submission from beh.uk", form );
+  const sent = await sendFormViaResend(context.env.RESEND_KEY, context.env.EMAIL_BEN, "New contact form submission from beh.uk", form);
 
   if (!sent) {
     return new Response("Oops! Something went wrong. Please try submitting the form again.", { status: 500 });
