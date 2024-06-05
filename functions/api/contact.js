@@ -4,8 +4,7 @@ export async function onRequest(context) {
   }
 
   const url = new URL(context.request.url)
-  const formData = await context.request.formData();
-  const form = Object.fromEntries(formData.entries());
+  const form = Object.fromEntries((await context.request.formData()).entries());
   form.cf = context.request.cf;
   form.headers = Object.fromEntries(context.request.headers.entries());
 
