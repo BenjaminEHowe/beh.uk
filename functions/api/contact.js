@@ -5,11 +5,11 @@ export async function onRequest(context) {
 
   const url = new URL(context.request.url)
   const formData = await context.request.formData();
-  const body = Object.fromEntries(formData.entries());
-  body.cf = context.request.cf;
-  body.headers = Object.fromEntries(context.request.headers.entries());
+  const form = Object.fromEntries(formData.entries());
+  form.cf = context.request.cf;
+  form.headers = Object.fromEntries(context.request.headers.entries());
 
-  const sent = await sendFormViaResend(body, context.env.EMAIL_BEN, context.env.RESEND_KEY);
+  const sent = await sendFormViaResend(form, context.env.EMAIL_BEN, context.env.RESEND_KEY);
 
   if (!sent) {
     return new Response("Oops! Something went wrong. Please try submitting the form again.", { status: 500 });
@@ -19,22 +19,16 @@ export async function onRequest(context) {
 }
 
 
-function bodyToText(body) {
-  return `Email from ${body.email}
-
-"name" (honeypot, should be blank): ${body.name}
-
-Message:
-${body.message}
-
-headers:
-${prettyJson(body.headers)}
-
-cf:
-${prettyJson(body.cf)}`
+function formToText(form) {
+  const text = ""
+  for (const property in form) {
+    text += `${property}:\n`
+    text += `${form[property]}\n\n`
+  }
+  return text
 }
 
-async function sendFormViaResend(body, email, api_key) {
+async function sendFormViaResend(form, email, api_key) {
   const response = await fetch(new Request("https://api.resend.com/emails", {
     method: "POST",
     headers: {
@@ -45,7 +39,7 @@ async function sendFormViaResend(body, email, api_key) {
       from: "no-reply@viaresend.beh.uk",
       to: email,
       subject: "New contact form submission from beh.uk",
-      text: bodyToText(body),
+      text: formToText(form),
     }),
   }));
   return response.ok
