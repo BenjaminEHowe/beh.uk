@@ -25,7 +25,7 @@ function formToText(form) {
     text += `${property}:\n`;
     var value = form[property];
     if (typeof value !== "string") {
-      value = JSON.stringify(value)
+      value = prettyJson(value)
     }
     text += `${value}\n\n`;
   }
