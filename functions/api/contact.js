@@ -20,7 +20,7 @@ export async function onRequest(context) {
 
 
 function formToText(form) {
-  const text = ""
+  var text = ""
   for (const property in form) {
     text += `${property}:\n`
     text += `${form[property]}\n\n`
