@@ -8,7 +8,7 @@ export async function onRequest(context) {
   form.cf = context.request.cf;
   form.headers = Object.fromEntries(context.request.headers.entries());
 
-  const sent = await sendFormViaResend(form, context.env.EMAIL_BEN, context.env.RESEND_KEY);
+  const sent = await sendFormViaResend(context.env.RESEND_KEY, context.env.EMAIL_BEN, "New contact form submission from beh.uk", form );
 
   if (!sent) {
     return new Response("Oops! Something went wrong. Please try submitting the form again.", { status: 500 });
@@ -31,7 +31,7 @@ function formToText(form) {
   return text
 }
 
-async function sendFormViaResend(form, email, api_key) {
+async function sendFormViaResend(api_key, to, subject, form) {
   const response = await fetch(new Request("https://api.resend.com/emails", {
     method: "POST",
     headers: {
@@ -40,8 +40,8 @@ async function sendFormViaResend(form, email, api_key) {
     },
     body: JSON.stringify({
       from: "no-reply@viaresend.beh.uk",
-      to: email,
-      subject: "New contact form submission from beh.uk",
+      to,
+      subject,
       text: formToText(form),
     }),
   }));
