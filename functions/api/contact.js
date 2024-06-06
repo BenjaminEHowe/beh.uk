@@ -10,6 +10,12 @@ export async function onRequest(context) {
   form.cf = context.request.cf;
   form.headers = Object.fromEntries(context.request.headers.entries());
 
+  if (form.name === "") {
+    form.name = "blank, good, honeypot passed"
+  } else {
+    form.name += " (BAD, honeypot failed)"
+  }
+
   const sent = await sendFormViaEmail({
     env: context.env,
     subject: "New contact form submission from beh.uk",
