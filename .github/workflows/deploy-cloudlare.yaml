@@ -43,6 +43,8 @@ jobs:
           path: _site
       - name: Copy functions
         run: cp -r functions _site
+      - name: Copy functions sources / imports
+        run: cp -r functions-src _site
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
