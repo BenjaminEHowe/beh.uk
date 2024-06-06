@@ -14,8 +14,8 @@ include:
 
 exclude:
   - functions
+  - functions-src
   - README.md
-  - src
 
 minibundle:
   minifier_commands:
