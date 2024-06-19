@@ -26,8 +26,20 @@ jobs:
           if-no-files-found: error
           path: _site/
 
+  validate-d1:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Execute SQL against local database
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: d1 execute beh-uk-forms --local --file=./sql/beh-uk-forms-schema.sql
+
   deploy-to-cloudflare-pages:
-    needs: build-jekyll
+    needs: [build-jekyll, validate-d1]
     runs-on: ubuntu-22.04
     steps:
       - name: Check out repository
@@ -50,4 +62,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy _site --project-name=beh-uk --branch=${{ steps.extract_branch.outputs.branch }} --commit-dirty=true
+          command: pages deploy _site --branch=${{ steps.extract_branch.outputs.branch }} --commit-dirty=true
