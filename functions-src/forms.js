@@ -10,8 +10,8 @@ async function handleForm({
 }) {
   const submissionId = ulid();
   const submittedTs = new Date().toISOString();
-  const replyEmail = form["email"];
   const fields = Object.fromEntries((await context.request.formData()).entries());
+  const replyEmail = fields.email;
   const spamReasons = [];
   const cf = context.request.cf;
   const headers = Object.fromEntries(context.request.headers.entries());
