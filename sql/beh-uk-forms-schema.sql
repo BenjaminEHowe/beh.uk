@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS Customers (
+CREATE TABLE IF NOT EXISTS submissions (
   submission_id TEXT PRIMARY KEY,
   form_id TEXT NOT NULL,
   submitted_ts DATETIME NOT NULL,
