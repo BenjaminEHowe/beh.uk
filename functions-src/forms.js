@@ -19,6 +19,8 @@ async function handleForm({
   if (typeof honeypotField === "string") {
     if (fields[honeypotField] !== "") {
       spamReasons.push("HONEYPOT");
+    } else {
+      delete fields[honeypotField];
     }
   }
 
@@ -38,7 +40,7 @@ async function handleForm({
     return await sendFormViaEmail({
       env: context.env,
       subject: `New ${formId} form submission from beh.uk`,
-      form,
+      fields,
     })
   } else {
     // submission is belived to be spam, return OK and don't do anything else
