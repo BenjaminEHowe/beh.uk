@@ -5,5 +5,5 @@ CREATE TABLE IF NOT EXISTS Customers (
   reply_email TEXT,
   fields TEXT NOT NULL,
   cf TEXT NOT NULL,
-  headers TEXT NOT NULL,
+  headers TEXT NOT NULL
 );
