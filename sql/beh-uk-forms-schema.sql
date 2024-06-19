@@ -4,6 +4,7 @@ CREATE TABLE IF NOT EXISTS submissions (
   submitted_ts DATETIME NOT NULL,
   reply_email TEXT,
   fields TEXT NOT NULL,
+  spam_reasons TEXT NOT NULL,
   cf TEXT NOT NULL,
   headers TEXT NOT NULL
 );
