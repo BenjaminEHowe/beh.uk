@@ -1,0 +1,6 @@
+name = "beh-uk"
+
+[[d1_databases]]
+binding = "DB_FORMS"
+database_name = "beh-uk-forms"
+database_id = "acb261ce-be3c-46d4-a89b-a6587eca3440"

@@ -1,4 +1,4 @@
-import { sendFormViaEmail } from "../../functions-src/comms/email.js"
+import { handleForm } from "../../functions-src/forms.js"
 
 export async function onRequest(context) {
   if (context.request.method !== "POST") {
@@ -6,23 +6,14 @@ export async function onRequest(context) {
   }
 
   const url = new URL(context.request.url)
-  const form = Object.fromEntries((await context.request.formData()).entries());
-  form.cf = context.request.cf;
-  form.headers = Object.fromEntries(context.request.headers.entries());
 
-  if (form.name === "") {
-    form.name = "blank, good, honeypot passed"
-  } else {
-    form.name += " (BAD, honeypot failed)"
-  }
-
-  const sent = await sendFormViaEmail({
-    env: context.env,
-    subject: "New contact form submission from beh.uk",
-    form,
+  const success = await handleForm({
+    context,
+    formId: "CONTACT",
+    honeypotField: "name",
   });
 
-  if (!sent) {
+  if (!success) {
     return new Response("Oops! Something went wrong. Please try submitting the form again.", { status: 500 });
   }
 

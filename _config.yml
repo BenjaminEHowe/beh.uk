@@ -15,6 +15,7 @@ include:
 exclude:
   - functions
   - functions-src
+  - sql
   - README.md
 
 minibundle:
