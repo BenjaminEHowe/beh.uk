@@ -40,7 +40,7 @@ async function handleForm({
     return await sendFormViaEmail({
       env: context.env,
       subject: `New ${formId} form submission from beh.uk`,
-      fields,
+      form: fields,
     })
   } else {
     // submission is belived to be spam, return OK and don't do anything else
