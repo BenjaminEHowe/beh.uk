@@ -1,5 +1,5 @@
-import { sendFormViaEmail } from "comms/email.js"
-import { ulidFactory } from "ulid.ts"
+import { sendFormViaEmail } from "./comms/email.js"
+import { ulidFactory } from "./ulid.ts"
 
 const ulid = ulidFactory({ monotonic: true });
 
@@ -16,7 +16,7 @@ async function handleForm({
   const cf = context.request.cf;
   const headers = Object.fromEntries(context.request.headers.entries());
 
-  if (typeof honeypotField === "String") {
+  if (typeof honeypotField === "string") {
     if (fields[honeypotField] !== "") {
       spamReasons.push("HONEYPOT");
     }
