@@ -23,7 +23,15 @@ async function handleForm({
   }
 
   await context.env.DB_FORMS.prepare("INSERT INTO submissions (submission_id, form_id, submitted_ts, reply_email, fields, spam_reasons, cf, headers) VALUES (?, ?, ?, ?, ?, ?, ?, ?)")
-    .bind(submissionId, formId, submittedTs, replyEmail, fields, spamReasons, cf, headers)
+    .bind(
+      submissionId,
+      formId,
+      submittedTs,
+      replyEmail,
+      JSON.stringify(fields),
+      JSON.stringify(spamReasons),
+      JSON.stringify(cf),
+      JSON.stringify(headers))
     .run();
 
   if (spamReasons.length === 0) {
