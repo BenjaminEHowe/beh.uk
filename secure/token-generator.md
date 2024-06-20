@@ -16,7 +16,8 @@ Use this form to generate a token for the urgent contact form.
   </fieldset>
   <button type="submit" style="margin-bottom:1em">Generate Token</button>
 </form>
-<p>Your token is: <span id="token-value">...</span></p>
+<p>Your token is:</p>
+<pre style="display:inline" id="token-value">...</pre>
 
 <script>
   const form = document.getElementById("token-generation-form");
