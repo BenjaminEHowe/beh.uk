@@ -16,7 +16,7 @@ async function generateSecureToken({
   name,
   secret,
 }) {
-  const hash = await generateHash(`${name}/${expiry}/${secret}`).substring(0, 8);
+  const hash = (await generateHash(`${name}/${expiry}/${secret}`)).substring(0, 8);
   return `${name}/${expiry}/${hash}`;
 }
 
@@ -31,7 +31,7 @@ async function verifySecureToken({
     return false;
   }
 
-  const expectedHash = await generateHash(`${name}/${expiry}/${secret}`).substring(0, 8);
+  const expectedHash = (await generateHash(`${name}/${expiry}/${secret}`)).substring(0, 8);
   if (hash != expectedHash) {
     return false;
   }
