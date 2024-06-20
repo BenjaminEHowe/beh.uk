@@ -16,8 +16,8 @@ Use this form to generate a token for the urgent contact form.
   </fieldset>
   <button type="submit" style="margin-bottom:1em">Generate Token</button>
 </form>
-<p>Your token is:</p>
-<pre style="display:inline" id="token-value">...</pre>
+<p>Your token is: <pre style="display:inline" id="token-value">...</pre></p>
+
 
 <form id="token-verification-form">
   <fieldset style="margin-bottom:1em">
@@ -26,6 +26,7 @@ Use this form to generate a token for the urgent contact form.
   </fieldset>
   <button type="submit" style="margin-bottom:1em">Verify Token</button>
 </form>
+<p>Token status: <span id="token-verify-output">?</span></p>
 
 <script>
   document.getElementById("token-generation-form").addEventListener("submit", event => {
@@ -49,7 +50,7 @@ Use this form to generate a token for the urgent contact form.
     event.preventDefault()
     const formData = new FormData(event.target);
     const token = formData.get("token");
-    fetch('/secure/api/token-verify', {
+    fetch('/api/token-verify', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
