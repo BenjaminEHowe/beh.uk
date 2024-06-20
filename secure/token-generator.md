@@ -5,24 +5,7 @@ title: Token Generator
 
 Use this form to generate a token for the urgent contact form.
 
-<script>
-  function getToken(form) {
-    name = form.name
-    expiry = form.expiry
-    fetch('/secure/api/token-generator', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({name: form.name, expiry: form.expiryh})
-    })
-    .then(res => res.json())
-    .then(res => console.log(res));
-  }
-</script>
-
-<form id="contact-form" action="javascript:;" onsubmit=" getToken( this ) ">
+<form id="token-generation-form">
   <fieldset style="margin-bottom:1em">
     <label for="name" style="display:inline-block; margin-bottom:0.5em">Token name:</label>
     <input type="text" name="name" id="name" placeholder="Token name" style="box-sizing:border-box; width:100%; max-width:20em" required>
@@ -33,3 +16,23 @@ Use this form to generate a token for the urgent contact form.
   </fieldset>
   <button type="submit" style="margin-bottom:1em">Generate Token</button>
 </form>
+
+<script>
+  const form = document.getElementById("token-generation-form");
+  form.addEventListener("submit", event => {
+    event.preventDefault()
+    const formData = new FormData(event.target);
+    const name = formData.get("name");
+    const expiry = formData.get("expiry");
+    fetch('/secure/api/token-generator', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ name, expiry })
+    })
+    .then(res => res.json())
+    .then(res => console.log(res));
+  });
+</script>
