@@ -7,7 +7,7 @@ export async function onRequest(context) {
 
   const json = await context.request.json();
   const secret = context.env.TOKEN_GENERATOR_SECRET;
-  const token = generateSecureToken({
+  const token = await generateSecureToken({
     name: json.name,
     expiry: json.expiry,
     secret,
