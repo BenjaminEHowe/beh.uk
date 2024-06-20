@@ -19,14 +19,21 @@ Use this form to generate a token for the urgent contact form.
 <p>Your token is:</p>
 <pre style="display:inline" id="token-value">...</pre>
 
+<form id="token-verification-form">
+  <fieldset style="margin-bottom:1em">
+    <label for="name" style="display:inline-block; margin-bottom:0.5em">Token:</label>
+    <input type="text" name="token" id="token" placeholder="Token" style="box-sizing:border-box; width:100%; max-width:20em" required>
+  </fieldset>
+  <button type="submit" style="margin-bottom:1em">Verify Token</button>
+</form>
+
 <script>
-  const form = document.getElementById("token-generation-form");
-  form.addEventListener("submit", event => {
+  document.getElementById("token-generation-form").addEventListener("submit", event => {
     event.preventDefault()
     const formData = new FormData(event.target);
     const name = formData.get("name");
     const expiry = formData.get("expiry");
-    fetch('/secure/api/token-generator', {
+    fetch('/secure/api/token-generate', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -36,5 +43,28 @@ Use this form to generate a token for the urgent contact form.
     })
     .then(res => res.json())
     .then(res => document.getElementById("token-value").innerHTML = res.token);
+  });
+
+  document.getElementById("token-verification-form").addEventListener("submit", event => {
+    event.preventDefault()
+    const formData = new FormData(event.target);
+    const token = formData.get("token");
+    fetch('/secure/api/token-verify', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ token })
+    })
+    .then(res => res.json())
+    .then(res => {
+      const element = document.getElementById("token-verify-output");
+      if (res.ok) {
+        element.innerHTML = "ok";
+      } else {
+        element.innerHTML = "BAD";
+      }
+    });
   });
 </script>
