@@ -39,8 +39,8 @@ Use this form to generate a token for the urgent contact form.
     fetch('/secure/api/token-generate', {
       method: 'POST',
       headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        'accept': 'application/json',
+        'content-type': 'application/json'
       },
       body: JSON.stringify({ name, expiry })
     })
@@ -55,8 +55,8 @@ Use this form to generate a token for the urgent contact form.
     fetch('/api/token-verify', {
       method: 'POST',
       headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        'accept': 'application/json',
+        'content-type': 'application/json'
       },
       body: JSON.stringify({ token })
     })
