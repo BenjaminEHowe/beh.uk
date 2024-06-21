@@ -1,3 +1,5 @@
+import { USER_AGENT } from "../util.js";
+
 function formToText(form) {
   var text = "";
   for (const property in form) {
@@ -26,8 +28,9 @@ async function sendFormViaResend(api_key, to, subject, form) {
   const response = await fetch(new Request("https://api.resend.com/emails", {
     method: "POST",
     headers: {
-      "Authorization": `Bearer ${api_key}`,
+      "authorization": `Bearer ${api_key}`,
       "content-type": "application/json",
+      "user-agent": USER_AGENT,
     },
     body: JSON.stringify({
       from: "no-reply@viaresend.beh.uk",
