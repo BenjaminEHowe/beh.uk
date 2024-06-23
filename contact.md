@@ -5,7 +5,7 @@ title: Contact
 
 If you'd like to get in touch then you can contact me using the below form.
 
-<form id="contact-form" method="post" action="/api/contact">
+<form id="contact-form" method="post" action="/api/form/contact">
   <fieldset style="display:none">
     <label for="name">Leave blank if you're human:</label>
     <input type="text" name="name" id="name" placeholder="Leave blank if you're human">

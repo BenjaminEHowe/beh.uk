@@ -5,7 +5,7 @@ title: Urgent Contact
 
 If you have an access token then you can send me an urgent message using this form:
 
-<form id="contact-form" method="post" action="/api/contact-urgent">
+<form id="contact-form" method="post" action="/api/form/contact-urgent">
   <fieldset style="display:none">
     <label for="name">Leave blank if you're human:</label>
     <input type="text" name="name" id="name" placeholder="Leave blank if you're human">
