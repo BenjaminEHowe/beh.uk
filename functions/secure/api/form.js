@@ -16,7 +16,7 @@ export async function onRequest(context) {
       return row;
     });
 
-  return Response.json(submissionsQuery.results);
+  return Response.json(rows);
 }
 
 // TODO: this is bad practice, consider replacing (see https://www.reddit.com/r/learnjavascript/comments/qgtut6/comment/hi8jg6w/)
