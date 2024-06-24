@@ -3,7 +3,7 @@ export async function onRequest(context) {
     return new Response("Invalid request method", { status: 405 });
   }
 
-  const submissionsQuery = await context.env.DB_FORMS.prepare("SELECT submission_id, form_id, submitted_ts, spam_reasons, json_extract(headers, '$.cf-connecting-ip') as ip, json_extract(cf, '$.asn') as asn, json_extract(cf, '$.country') as country FROM submissions WHERE submitted_ts > ?")
+  const submissionsQuery = await context.env.DB_FORMS.prepare("SELECT submission_id, form_id, submitted_ts, spam_reasons, json_extract(headers, '$.cf-connecting-ip') as ip, json_extract(cf, '$.asn') as asn, json_extract(cf, '$.country') as country FROM submissions WHERE submitted_ts > ? ORDER BY submitted_ts DESC")
     .bind(
       new Date().subtractDays(30).toISOString(),
     )

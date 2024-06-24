@@ -26,7 +26,11 @@ This table shows form submissions over the last 30 days:
       "Spam Reasons",
       "IP Address",
       "ASN",
-    ].forEach(heading => headings.insertCell().innerHTML = heading);
+    ].forEach(heading => {
+      const th = document.createElement("th");
+      th.innerHTML = heading;
+      headings.appendChild(th);
+    });
     const tbody = table.createTBody();
     submissions.forEach(row => {
       const tr = tbody.insertRow();
@@ -41,7 +45,7 @@ This table shows form submissions over the last 30 days:
       tdSubmitted.innerHTML = row.submitted_ts;
 
       const tdSpamReasons = tr.insertCell();
-      tdSpamReasons.innerHTML = row.spam_reasons;
+      tdSpamReasons.innerHTML = row.spam_reasons.join([separator = ', ']);
 
       const tdIpAddress = tr.insertCell();
       tdIpAddress.innerHTML = `${getFlagEmoji(row.country)} <a href="https://cleantalk.org/blacklists/${row.ip}">${row.ip}</a>`;

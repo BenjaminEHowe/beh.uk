@@ -75,6 +75,7 @@ thead th {
   border: solid 1px #000;
   font-weight: bold;
   padding: 10px;
+  text-align: left;
 }
 
 tbody td {
@@ -180,7 +181,13 @@ label {
 
 /* professional experience (about page) */
 
+table#professional-experience {
+  border: none;
+}
+
 table#professional-experience td {
+  border: none;
+  padding: 0;
   vertical-align: top;
 }
 
