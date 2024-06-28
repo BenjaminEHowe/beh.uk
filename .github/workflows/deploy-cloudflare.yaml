@@ -21,7 +21,7 @@ jobs:
         run: bundle install
       - name: Build website (non-production)
         if: steps.extract-branch.outputs.branch != 'main'
-        run: bundle exec jekyll build --drafts
+        run: bundle exec jekyll build --drafts --future
       - name: Build website (production)
         if: steps.extract-branch.outputs.branch == 'main'
         run: bundle exec jekyll build
