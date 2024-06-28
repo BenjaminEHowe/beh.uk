@@ -16,14 +16,14 @@ jobs:
       - name: Extract branch name
         shell: bash
         run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
-        id: extract_branch
+        id: extract-branch
       - name: Install gems
         run: bundle install
       - name: Build website (non-production)
-        if: steps.extract_branch.outputs.branch != 'main'
+        if: steps.extract-branch.outputs.branch != 'main'
         run: bundle exec jekyll build --drafts
       - name: Build website (production)
-        if: steps.extract_branch.outputs.branch == 'main'
+        if: steps.extract-branch.outputs.branch == 'main'
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
@@ -55,7 +55,7 @@ jobs:
       - name: Extract branch name
         shell: bash
         run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
-        id: extract_branch
+        id: extract-branch
       - name: Download built website
         uses: actions/download-artifact@v4
         with:
@@ -70,7 +70,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy _site --project-name=beh-uk --branch=${{ steps.extract_branch.outputs.branch }} --commit-dirty=true
+          command: pages deploy _site --project-name=beh-uk --branch=${{ steps.extract-branch.outputs.branch }} --commit-dirty=true
 
   deploy-d1:
     needs: [build-jekyll, validate-d1]
