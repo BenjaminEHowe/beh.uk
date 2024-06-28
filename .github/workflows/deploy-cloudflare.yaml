@@ -13,9 +13,17 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        id: extract_branch
       - name: Install gems
         run: bundle install
-      - name: Build website
+      - name: Build website (non-production)
+        if: steps.extract_branch.outputs.branch != 'main'
+        run: bundle exec jekyll build --drafts
+      - name: Build website (production)
+        if: steps.extract_branch.outputs.branch == 'main'
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
