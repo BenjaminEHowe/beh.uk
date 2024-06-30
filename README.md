@@ -4,13 +4,18 @@ Benjamin Howe's personal website, deployed to Cloudflare Pages. Originally gener
 
 ## Installation
 
-[Install Ruby and Jekyll](https://jekyllrb.com/docs/step-by-step/01-setup/), then clone this repository in a convenient location. In the future it might be nice to have these dependencies within a container ([there's a GitHub issue for that](https://github.com/BenjaminEHowe/beh.uk/issues/21)).
+Clone this repository in a convenient location.
 
-Install gems using `bundle install`.
+To run locally without Docker [install Ruby and Jekyll](https://jekyllrb.com/docs/step-by-step/01-setup/).
 
 ## Usage
 
-Run `bundle exec jekyll serve` and navigate to http://127.0.0.1:4000.
+Install gems using `bundle install` and then run `bundle exec jekyll serve` and navigate to http://127.0.0.1:4000.
+
+### Using Docker
+
+- Windows (cmd): `docker run -it --rm -v %cd%:/app -w /app -p 127.0.0.1:4000:4000 ruby:3.3.1 sh -c "bundle install && bundle exec jekyll serve --force_polling -H 0.0.0.0"`
+- macOS & Linux (bash): `docker run -it --rm -v "$PWD":/app -w /app -p 127.0.0.1:4000:4000 ruby:3.3.1 sh -c "bundle install && bundle exec jekyll serve -H 0.0.0.0"`
 
 ## Tests
 
