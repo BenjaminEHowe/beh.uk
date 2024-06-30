@@ -86,7 +86,7 @@ tbody td {
 /* header */
 
 header, footer {
-  background: #961c1c;
+  background: #990000;
 }
 
 header {
@@ -217,7 +217,7 @@ table#professional-experience tr + tr td {
 /* spinner used while waiting for fetch, see https://loading.io/css/ */
 
 .lds-dual-ring {
-  color: #961c1c;
+  color: #990000;
   display: block;
   margin: 0 auto;
 }
