@@ -9,6 +9,14 @@ assets:
   - reset
   - main
 {% endminibundle %}
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ site.url }}/{% ministamp { source_path: '_assets/img/og-square.png', destination_path: 'assets/img/og-square.png' } %}">
+<meta property="og:url" content="{{ site.url }}{{page.url}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:image" content="{{ site.url }}/{% ministamp { source_path: '_assets/img/og-square.png', destination_path: 'assets/img/og-square.png' } %}">
+<meta property="twitter:url" content="{{ site.url }}{{page.url}}">
 <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.beh.uk/img/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.beh.uk/img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.beh.uk/img/favicon-16x16.png">
