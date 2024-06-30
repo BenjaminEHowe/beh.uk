@@ -1,11 +1,25 @@
+-
+  name: "Elder"
+  logo: "elder.png"
+  roles:
+    -
+      title: "Senior Software Engineer"
+      start: 2023
+      overview: "I worked with the Onboarding, Matching, and Manage squads. I enhanced the monitoring of various technology assets, enabling the business to better hold vendors accountable. I also delivered gamified security awareness training for the technology team."
 - 
   name: "American Express"
   logo: "amex.png"
   roles:
     -
-      title: "Full Stack Software Engineer (Engineer II)"
+      title: "Senior Software Engineer"
+      start: 2022
+      end: 2023
+      overview: "Working with the Developer Enablement team, I built a repository scanning tool to identify teams adhering to best practices and those needing more support. Using nudges I helped teams reach 90+% positive behaviours.</p><p>I developed and contributed to \"the Amex Way\" documentation and shared it organically more than 200 times. The use of common solutions to common problems drove efficiencies including faster time-to-market and enhanced internal mobility throughout the company. I created various Slack workflows to answer common questions on Slack. This allowed engineers who forgot to use the search feature to still get timely answers to their queries, saving approximately 1,000 hours."
+    -
+      title: "Software Engineer"
       start: 2020
-      overview: "Currently working with the Business Travel Account team, I'm helping to build a tool which will enrich travel-related transactions with additional metadata, using Java, Maven, Spring Boot, Docker, Cucumber / BDD, and CI/CD (Jenkins).</p><p>I've also assisted the early careers team in assessing apprentice, intern, and graduate programme candidates, including designing a Codility technical assessment for our global intern and graduate programme candidates."
+      end: 2022
+      overview: "Working with the Business Travel Account team, I helped to build a tool which enriched travel-related transactions with additional metadata, using Java, Maven, Spring Boot, Docker, Cucumber / BDD, and CI/CD (Jenkins).</p><p>I also assisted the early careers team in assessing apprentice, intern, and graduate programme candidates, including designing a Codility technical assessment for our global intern and graduate programme candidates."
     -
       title: "Graduate Engineer"
       start: 2018
