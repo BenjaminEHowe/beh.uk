@@ -4,7 +4,7 @@ title: "Conservative Party Websites: Made In Britain?"
 categories: politics
 ---
 
-![A graphic showing the difference between double-storey and single-storey lowercase a](/{% ministamp { source_path: '_assets/img/bluetree-made-in-britain.png', destination_path: 'assets/img/bluetree-made-in-britain.png' } %} "The Made in Britain mark shown in the footer of a website promoting a Conservative Prospective Parliamentary candidate"){: .float-right}
+![The Made in Britain mark shown in the footer of a website promoting a Conservative Prospective Parliamentary candidate](/{% ministamp { source_path: '_assets/img/bluetree-made-in-britain.png', destination_path: 'assets/img/bluetree-made-in-britain.png' } %} "The Made in Britain mark shown in the footer of a website promoting a Conservative Prospective Parliamentary candidate"){: .float-right}
 
 When I was reviewing the website of my local Conservative [Prospective Parliamentary candidate](https://en.wikipedia.org/wiki/Prospective_parliamentary_candidate), I noticed that they were using the [Made in Britain collective mark](https://www.madeinbritain.org/about/the-collective-mark).
 This surprised me, and it made me wonder: how much of a typical Conservative website is actually "Made in Britain"?
