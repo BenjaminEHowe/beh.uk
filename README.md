@@ -6,16 +6,28 @@ Benjamin Howe's personal website, deployed to Cloudflare Pages. Originally gener
 
 Clone this repository in a convenient location.
 
-To run locally without Docker [install Ruby and Jekyll](https://jekyllrb.com/docs/step-by-step/01-setup/).
+To run Jekyll locally without Docker [install Ruby and Jekyll](https://jekyllrb.com/docs/step-by-step/01-setup/). Wrangler requires [Node.js](https://nodejs.org/) as unfortunately [the maintainers of Wrangler have decided against having an official container image for Wrangler](https://github.com/cloudflare/workers-sdk/issues/1316#issuecomment-1658608450).
 
 ## Usage
 
-Install gems using `bundle install` and then run `bundle exec jekyll serve` and navigate to http://127.0.0.1:4000.
-
-### Using Docker
+The easiest way to run Jekyll is using Docker:
 
 - Windows (cmd): `docker run -it --rm -v %cd%:/app -w /app -p 127.0.0.1:4000:4000 ruby:3.3.1 sh -c "bundle install && bundle exec jekyll serve --force_polling -H 0.0.0.0"`
 - macOS & Linux (bash): `docker run -it --rm -v "$PWD":/app -w /app -p 127.0.0.1:4000:4000 ruby:3.3.1 sh -c "bundle install && bundle exec jekyll serve -H 0.0.0.0"`
+
+### Using Wrangler
+
+To test some of the dynamic aspects of the website (e.g. [Cloudflare Pages Functions](https://developers.cloudflare.com/pages/functions/)), it is necessary to use [Wrangler](https://developers.cloudflare.com/workers/wrangler/).
+
+To set up a local database:
+
+`npx wrangler@latest d1 execute beh-uk-forms --local --file=./sql/beh-uk-forms-schema.sql`
+
+(note that Windows users will need to convert the line endings in the SQL file to `LF` to work around [a bug in `workerd`](https://github.com/cloudflare/workerd/issues/1300))
+
+Run the appropriate commend for Jekyll (see above) _without_ the port forward and listen hostname, then also run:
+
+`npx wrangler@latest pages dev --port 4000 _site`
 
 ## Tests
 
