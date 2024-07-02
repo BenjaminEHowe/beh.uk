@@ -34,5 +34,5 @@ The words within this repository (contained within `*.md` files) are licesed und
 Please assume all other files aren't licensed for re-use. If you'd like to re-use any other files, please [contact me via my website](https://www.beh.uk/contact). Thank you!
 
 Credits:
-* ThinkPad background image from [Pixabay](https://pixabay.com/en/laptop-keyboard-notebook-trackpoint-1864126/), obtained prior to the [Pixabay license change](https://www.sugarfire.net/pixabay-license-change-no-longer-a-cc0-license/).
+* ThinkPad background image from [Pixabay](https://pixabay.com/en/laptop-keyboard-notebook-trackpoint-1864126/), obtained prior to the [Pixabay license change](https://www.24zero.net/pixabay-license-change-no-longer-a-cc0-license/).
 * Social icons from [Font Awesome](https://fontawesome.com/).
