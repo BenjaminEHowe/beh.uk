@@ -53,8 +53,6 @@ jobs:
       - name: Create tables in local database beh-uk-forms
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: d1 execute beh-uk-forms --local --file=./sql/beh-uk-forms-schema.sql
 
   deploy-to-cloudflare-pages:
