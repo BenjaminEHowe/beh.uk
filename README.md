@@ -29,7 +29,7 @@ I don't expect anyone else to contribute to my website, but if you'd like to the
 
 The code powering my website is licensed under the [MIT license](https://choosealicense.com/licenses/mit/). You can do whatever you want with the code, provided you include the "MIT License" copyright notice in the LICENSES file. That being said, please don't copy my website design verbatim -- while I can't legally prevent you from doing so, it's bad taste (changing the image and colour scheme is easy!).
 
-The words within this repository (contained within `*.md` files) are licesed under the [Creative Commons Attribution-ShareAlike 4.0 International license ("CC BY-SA")](https://creativecommons.org/licenses/by-sa/4.0/). You csan share, copy, or adapt the pages and blog posts, provided you attribute and (if you remix, transform, or build upon the them, you must distribute your contributions under the CC BY-SA license). You may not prevent others (using legal, technical, or any other methods) from doing anything the license permits.
+The words within this repository (contained within `*.md` files) are licesed under the [Creative Commons Attribution-ShareAlike 4.0 International license ("CC BY-SA")](https://creativecommons.org/licenses/by-sa/4.0/). You can share, copy, or adapt the pages and blog posts, provided you attribute and (if you remix, transform, or build upon the them, you must distribute your contributions under the CC BY-SA license). You may not prevent others (using legal, technical, or any other methods) from doing anything the license permits.
 
 Please assume all other files aren't licensed for re-use. If you'd like to re-use any other files, please [contact me via my website](https://www.beh.uk/contact). Thank you!
 
