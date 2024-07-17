@@ -14,6 +14,7 @@ include:
   - _redirects
 
 exclude:
+  - .wrangler
   - functions
   - functions-src
   - sql

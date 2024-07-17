@@ -3,4 +3,7 @@ _site
 .jekyll-metadata
 vendor
 node_modules
+
+# wrangler
+.dev.vars
 .wrangler

@@ -17,7 +17,7 @@ The easiest way to run Jekyll is using Docker:
 
 ### Using Wrangler
 
-To test some of the dynamic aspects of the website (e.g. [Cloudflare Pages Functions](https://developers.cloudflare.com/pages/functions/)), it is necessary to use [Wrangler](https://developers.cloudflare.com/workers/wrangler/).
+To test some of the dynamic aspects of the website (e.g. [Cloudflare Pages Functions](https://developers.cloudflare.com/pages/functions/)), it is necessary to use [Wrangler](https://developers.cloudflare.com/workers/wrangler/). You may also need [a local `.dev.vars` file](https://developers.cloudflare.com/pages/functions/bindings/#interact-with-your-secrets-locally) containing secrets.
 
 To set up a local database:
 
