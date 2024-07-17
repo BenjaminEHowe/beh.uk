@@ -12,7 +12,9 @@ export async function onRequest(context) {
     .results
     .map((row) => {
       row.spam_reasons = JSON.parse(row.spam_reasons);
-      row.asn = row.asn.toString();
+      if (row.asn !== null) {
+        row.asn = row.asn.toString();
+      }
       return row;
     });
 
