@@ -38,7 +38,7 @@ export async function onRequest(context) {
   }
   const tsRe = nreDepartures["generatedAt"].match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}).\d*(\+\d{2}:\d{2})$/);
   data["generatedAt"] = `${tsRe[1]}-${tsRe[2]}-${tsRe[3]}T${tsRe[4]}:${tsRe[5]}:${tsRe[6]}${tsRe[7]}`;
-  const services = []
+  let services = [];
   if ("trainServices" in nreDepartures) {
     nreDepartures["trainServices"].forEach((nreService) => {
       const service = {};
@@ -47,7 +47,6 @@ export async function onRequest(context) {
       if (crsFilter) {
         const allCallingPoints = []
         nreService["subsequentCallingPoints"].forEach((callingPoints => {
-          console.log(callingPoints["callingPoint"]);
           allCallingPoints.push(...callingPoints["callingPoint"]);
         }))
         const callingPoint = allCallingPoints.filter(cp => cp["crs"] === crsFilter)[0];
@@ -91,13 +90,16 @@ export async function onRequest(context) {
     });
   }
 
+  // sorting
   let servicesContainsEarlyMorning = false;
   let servicesContainsLateNight = false;
   services.forEach((service) => {
     const serviceHour = service["timeForSort"].split(":")[0];
-    if (serviceHour in SERVICE_HOURS_EARLY_MORNING) {
+    if (SERVICE_HOURS_EARLY_MORNING.includes(serviceHour)) {
+      console.log("early morning found");
       servicesContainsEarlyMorning = true;
-    } else if (serviceHour in SERVICE_HOURS_LATE_NIGHT) {
+    } else if (SERVICE_HOURS_LATE_NIGHT.includes(serviceHour)) {
+      console.log("late night found");
       servicesContainsLateNight = true;
     }
   });
@@ -105,13 +107,14 @@ export async function onRequest(context) {
     services.forEach((service, index) => {
       const serviceHour = service["timeForSort"].split(":")[0];
       const serviceMinute = service["timeForSort"].split(":")[1];
-      if (serviceHour in SERVICE_HOURS_EARLY_MORNING) {
-        this[index]["timeForSort"] = `${parseInt(serviceHour)+24}:${serviceMinute}`;
+      if (SERVICE_HOURS_EARLY_MORNING.includes(serviceHour)) {
+        services[index]["timeForSort"] = `${parseInt(serviceHour)+24}:${serviceMinute}`;
       }
     });
   }
+  services.sort((a,b) => (a.timeForSort > b.timeForSort) ? 1 : ((b.timeForSort > a.timeForSort) ? -1 : 0));
 
-  data["services"] = services.sort().splice(0, NUM_SERVICES);
+  data["services"] = services.splice(0, NUM_SERVICES);
   return Response.json(data);
 }
 
