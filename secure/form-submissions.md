@@ -113,7 +113,9 @@ title: Form Submissions
 
         const tdAsn = tr.insertCell();
         const asn = row.asn;
-        tdAsn.innerHTML = `<a href="https://bgp.tools/as/${asn}">AS${asn}</a>`;
+        if (asn !== null) {
+          tdAsn.innerHTML = `<a href="https://bgp.tools/as/${asn}">AS${asn}</a>`;
+        }
       });
       content.innerHTML = table.outerHTML;
       history.pushState("", document.title, window.location.pathname + window.location.search);
