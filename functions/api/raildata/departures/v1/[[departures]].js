@@ -42,18 +42,6 @@ export async function onRequest(context) {
   if ("trainServices" in nreDepartures) {
     nreDepartures["trainServices"].forEach((nreService) => {
       const service = {};
-      
-      // verify that the service still calls at the filter station (if applicable)
-      if (crsFilter) {
-        const allCallingPoints = []
-        nreService["subsequentCallingPoints"].forEach((callingPoints => {
-          allCallingPoints.push(...callingPoints["callingPoint"]);
-        }))
-        const callingPoint = allCallingPoints.filter(cp => cp["crs"] === crsFilter)[0];
-        if (callingPoint["isCancelled"]) {
-          return;
-        }
-      }
 
       // cancellations
       service["cancelled"] = nreService["isCancelled"];
@@ -62,6 +50,18 @@ export async function onRequest(context) {
           service["cancelReason"] = `Due to ${nreService["cancelReason"].substring(CANCEL_REASON_PREFIX.length)}`;
         } else {
           service["cancelReason"] = nreService["cancelReason"];
+        }
+      }
+      
+      // verify that the service still calls at the filter station (if applicable)
+      if (crsFilter && !service["cancelled"]) {
+        const allCallingPoints = []
+        nreService["subsequentCallingPoints"].forEach((callingPoints => {
+          allCallingPoints.push(...callingPoints["callingPoint"]);
+        }))
+        const callingPoint = allCallingPoints.filter(cp => cp["crs"] === crsFilter)[0];
+        if (callingPoint["isCancelled"]) {
+          return;
         }
       }
 
