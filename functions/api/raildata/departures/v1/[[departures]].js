@@ -1,4 +1,4 @@
-import { USER_AGENT } from "../../../../functions-src/util";
+import { USER_AGENT } from "../../../../../functions-src/util";
 
 // TODO: allow these values to be customised through request params
 const NUM_SERVICES = 4;
