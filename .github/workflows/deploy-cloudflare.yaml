@@ -21,7 +21,7 @@ jobs:
         run: bundle install
       - name: Calculate branch alias URL
         if: steps.extract-branch.outputs.branch != 'main'
-        uses: schnerring/cloudflare-pages-branch-alias-action@v1.0.3
+        uses: schnerring/cloudflare-pages-branch-alias-action@v1.3.0
         id: pages-branch-alias
         with:
           git-branch: ${{ steps.extract-branch.outputs.branch }}
