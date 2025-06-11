@@ -12,8 +12,8 @@ To run Jekyll locally without Docker [install Ruby and Jekyll](https://jekyllrb.
 
 The easiest way to run Jekyll is using Docker:
 
-- Windows (cmd): `docker run -it --rm -v %cd%:/app -w /app -p 127.0.0.1:4000:4000 ruby:3.3.1 sh -c "bundle install && bundle exec jekyll serve --force_polling -H 0.0.0.0"`
-- macOS & Linux (bash): `docker run -it --rm -v "$PWD":/app -w /app -p 127.0.0.1:4000:4000 ruby:3.3.1 sh -c "bundle install && bundle exec jekyll serve -H 0.0.0.0"`
+- Windows (cmd): `docker run -it --rm -v %cd%:/app -w /app -p 127.0.0.1:4000:4000 ruby:3.4.4 sh -c "bundle install && bundle exec jekyll serve --force_polling -H 0.0.0.0"`
+- macOS & Linux (bash): `docker run -it --rm -v "$PWD":/app -w /app -p 127.0.0.1:4000:4000 ruby:3.4.4 sh -c "bundle install && bundle exec jekyll serve -H 0.0.0.0"`
 
 ### Using Wrangler
 
