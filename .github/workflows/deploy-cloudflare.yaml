@@ -51,7 +51,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4.2.2
       - name: Create tables in local database beh-uk-forms
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v3.14.1
         with:
           command: d1 execute beh-uk-forms --local --file=./sql/beh-uk-forms-schema.sql
 
@@ -71,7 +71,7 @@ jobs:
           name: jekyll-website
           path: _site
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v3.14.1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -84,7 +84,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4.2.2
       - name: Deploy tables to remote database beh-uk-forms
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v3.14.1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
