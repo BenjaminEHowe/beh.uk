@@ -27,7 +27,7 @@ jobs:
           git-branch: ${{ steps.extract-branch.outputs.branch }}
       - name: Set Jekyll URL
         if: steps.extract-branch.outputs.branch != 'main'
-        uses: mikefarah/yq@v4.44.2
+        uses: mikefarah/yq@v4.45.4
         with:
           cmd: yq -i '.url = "https://${{ steps.pages-branch-alias.outputs.branch-alias }}.beh-uk.pages.dev"' '_config.yml'
       - name: Build website (non-production)
